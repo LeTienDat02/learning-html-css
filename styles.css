@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #5B9BF3;
+    --color-heading: #3C567B;
+    --color-header-hover: #2E4E92;
+    --color-button: #458FF6;
+    --color-content: #7D7987;
+    --color-footer: #FFFFFF;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+}
