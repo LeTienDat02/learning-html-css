@@ -1,0 +1,54 @@
+@import url("./header.css");
+@import url("./introduce.css");
+@import url("./our-services.css");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #5B9BF3;
+    --color-heading-header: #3C567B;
+    --color-heading-text: #462E6A;
+    --color-header-hover: #2E4E92;
+    --color-button: #458FF6;
+    --color-content: #7D7987;
+    --color-footer: #FFFFFF;
+    --color-shadow: #f5f6fb;
+}
+
+html {
+    font-size: 62.5%;
+    height: 10000px;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* titles */
+.titles-part {
+    font-size: 4.5rem;
+    color: var(--color-heading-text);
+}
+/* button learn more */
+.btn-learn-more  .button{
+    width: 20rem;
+    height: 6rem;
+    border-radius: 5.5rem;
+    border: solid 2px var(--color-button) ;
+    background: var(--color-footer);
+    font-size: 1.8rem;
+    color: var(--color-button);
+    font-weight: 600;
+}
