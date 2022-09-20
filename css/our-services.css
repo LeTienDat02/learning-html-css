@@ -3,49 +3,47 @@
     background-repeat: no-repeat;
     background-position: center;
     background-position: left;
-    padding: 10rem 0;
+    padding: 100px 0;
     display: flex;
     justify-content: center;
 }
 
 .our-services {
-    max-width: 112rem;
+    max-width: 1120px;
     width: 100%;
     text-align: center;
 }
 
 .title-our-services {
-    max-width: 95.2rem;
-    padding: 0 5.5rem;
+    max-width: 952px;
+    padding: 0 55px;
     margin: auto;
 }
 
 .title-our-services h2::after {
     content: "";
-    width: 5.6rem;
+    width: 56px;
     height: 2px;
     display: block;
     margin: auto;
     background: var(--color-heading-text);
-    margin-top: 3.5rem;
-    margin-bottom: 3.5rem;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .title-our-services p {
-    font-size: 1.9rem;
+    font-size: 19px;
     color: #CCD2E9;
     font-weight: 600;
 }
 
 .items-services {
-    --spacing: 3.4rem;
-    --columns: 3;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-left: calc(-1*var(--spacing));
     margin-bottom: calc(-1*var(--spacing));
-    margin-top: 8.6rem;
+    margin-top: 86px;
 }
 
 .items-services :first-child {
@@ -56,22 +54,22 @@
     background: var(--color-footer);
     margin-left: var(--spacing);
     margin-bottom: var(--spacing);
-    padding: 5rem 4rem;
-    border-radius: 2rem;
-    box-shadow: 1rem 5rem 4rem var(--color-shadow);
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 10px 50px 40px var(--color-shadow);
     display: flex;
     flex-direction: column;
 }
 
 .card-services .icon {
-    height: 10rem;
-    margin-bottom: 3rem;
+    height: 100px;
+    margin-bottom: 30px;
 }
 
 .bottom .title {
-    font-size: 2.4rem;
+    font-size: 24px;
     color: #000000;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 }
 
 .bottom .content {
@@ -79,5 +77,5 @@
 }
 
 .our-services .btn-learn-more {
-    margin-top: 7rem;
+    margin-top: 70px;
 }

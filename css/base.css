@@ -16,15 +16,12 @@
     --color-content: #7D7987;
     --color-footer: #FFFFFF;
     --color-shadow: #f5f6fb;
-}
-
-html {
-    font-size: 62.5%;
-    height: 10000px;
+    --spacing: 34px;
+    --columns: 3;
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 16px;
     font-family: 'Mulish', sans-serif;
 }
 
@@ -43,12 +40,12 @@ a {
 }
 /* button learn more */
 .btn-learn-more  .button{
-    width: 20rem;
-    height: 6rem;
-    border-radius: 5.5rem;
+    width: 200px;
+    height: 60px;
+    border-radius: 55px;
     border: solid 2px var(--color-button) ;
     background: var(--color-footer);
-    font-size: 1.8rem;
+    font-size: 18px;
     color: var(--color-button);
     font-weight: 600;
 }
