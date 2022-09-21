@@ -1,0 +1,81 @@
+.our-services-container {
+    background-image: url("../assets/images/backgound-our-services.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: left;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.our-services {
+    max-width: 1120px;
+    width: 100%;
+    text-align: center;
+}
+
+.title-our-services {
+    max-width: 952px;
+    padding: 0 55px;
+    margin: auto;
+}
+
+.title-our-services h2::after {
+    content: "";
+    width: 56px;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background: var(--color-heading-text);
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.title-our-services p {
+    font-size: 19px;
+    color: #CCD2E9;
+    font-weight: 600;
+}
+
+.items-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: calc(-1*var(--spacing));
+    margin-bottom: calc(-1*var(--spacing));
+    margin-top: 86px;
+}
+
+.items-services :first-child {
+    box-shadow: none;
+}
+.card-services {
+    width: calc(calc(100% / var(--columns)) - var(--spacing));
+    background: var(--color-footer);
+    margin-left: var(--spacing);
+    margin-bottom: var(--spacing);
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 10px 50px 40px var(--color-shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-services .icon {
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.bottom .title {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.bottom .content {
+    color: var(--color-content);
+}
+
+.our-services .btn-learn-more {
+    margin-top: 70px;
+}
