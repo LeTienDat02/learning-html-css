@@ -1,0 +1,69 @@
+.information-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/images/background-information.png");
+    background-repeat: no-repeat;
+    background-position: 100% 60%;
+    position: relative;
+}
+
+.information {
+    max-width: 1360px;
+    width: 100%;
+    padding-right: 100px;
+}
+.item-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text-content {
+    width: 50%;
+    padding-left: 130px;
+}
+.text-content h5 {
+    font-size: 36px;
+    color: var(--color-heading-text);
+}
+
+.text-content h5::after {
+    content: "";
+    width: 56px;
+    height: 2px;
+    display: block;
+    background: var(--color-heading-text);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: var(--color-content);
+    margin-bottom: 40px;
+}
+
+.margin-leading-healthcare {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.margin-find-a-doctor {
+    margin-top: 350px;
+    margin-bottom: 135px;
+}
+
+.download-icon {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.img-mobile-app {
+    mix-blend-mode: darken;
+}
+
+.information-container .element {
+    position: absolute;
+    right: 0;
+    top: 550px;
+}
