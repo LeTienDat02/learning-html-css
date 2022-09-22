@@ -28,7 +28,7 @@
 .text button {
     width: 200px;
     height: 70px;
-    color: var(--color-footer);
+    color: var(--color-white);
     background: var(--color-button);
     border: none;
     border-radius: 55px;
