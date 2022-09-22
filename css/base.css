@@ -1,6 +1,7 @@
 @import url("./header.css");
 @import url("./introduce.css");
 @import url("./our-services.css");
+@import url("./information.css");
 * {
     box-sizing: border-box;
     margin: 0;
