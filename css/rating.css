@@ -1,0 +1,130 @@
+.rating-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+    padding-top: 135px;
+}
+
+.rating {
+    max-width: 1285px;
+    width: 100%;
+    position: relative;
+}
+
+.card-rating {
+    max-width: 1180px;
+    width: 100%;
+    border-radius: 24px;
+    background: linear-gradient(208.18deg, #6888C8 9.05%, #5A98F2 76.74%);
+    padding: 75px 135px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.card-rating .title {
+    font-size: 36px;
+    color: var(--color-footer);
+}
+
+.card-rating .element-top {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+}
+
+.rating .element-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 115px;
+}
+
+.card-rating .title::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: var(--color-footer);
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.content-rating {
+    display: flex;
+    margin-top: 100px;
+}
+
+.content-rating .person-infor {
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+    font-size: 18px;
+    color: var(--color-footer);
+    text-align: left;
+}
+
+.person-name {
+    margin-left: 50px;
+    line-height: 48px;
+}
+
+.person-name > h5 {
+    font-size: 22px;
+}
+
+.content-rating .text-rating{
+    flex-basis: 50%;
+    font-size: 22px;
+    line-height: 55px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    text-align: left;
+    padding-left: 20px;
+    color: var(--color-footer);
+}
+
+.control-list-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.icon-control {
+    color: #5B9BF3;
+    opacity: 0.3;
+    font-size: 28px;
+}
+
+.icon-control:hover {
+    opacity: 1;
+}
+
+.control-list-rating ul{
+    display: flex;
+}
+
+.control-list-rating ul a {
+    width: 11px;
+    height: 11px;
+    background: #5B9BF3;
+    opacity: 0.3; 
+    border-radius: 50%;
+    margin: 0 20px;
+    display: block;
+}
+
+.control-list-rating ul li:first-child {
+    margin-left: 96px;
+}
+
+.control-list-rating ul li:last-child {
+    margin-right: 96px;
+}
+
+.element-focus {
+    opacity: 1 !important;
+}
+
