@@ -2,6 +2,7 @@
 @import url("./introduce.css");
 @import url("./our-services.css");
 @import url("./information.css");
+@import url("./footer.css");
 * {
     box-sizing: border-box;
     margin: 0;
