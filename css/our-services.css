@@ -51,7 +51,7 @@
 }
 .card-services {
     width: calc(calc(100% / var(--columns)) - var(--spacing));
-    background: var(--color-footer);
+    background: var(--color-white);
     margin-left: var(--spacing);
     margin-bottom: var(--spacing);
     padding: 50px 40px;
