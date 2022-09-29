@@ -17,7 +17,7 @@
 
 .saviour-care-infor {
     max-width: 400px;
-    color: var(--color-footer);
+    color: var(--color-white);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,12 +25,12 @@
 }
 
 .card-top .ellipse {
-    background: var(--color-footer);
+    background: var(--color-white);
     border-radius: 50%;
 }
 
 .card-top .name-logo {
-    color: var(--color-footer);
+    color: var(--color-white);
 }
 
 .card-top p {
@@ -52,7 +52,7 @@
 .item-footer h5 {
     font-size: 20px;
     margin-bottom: 30px;
-    color: var(--color-footer);
+    color: var(--color-white);
 }
 
 .item-footer ul {
@@ -64,7 +64,7 @@
 
 .item-footer ul a {
     font-weight: 300;
-    color: var(--color-footer);
+    color: var(--color-white);
 }
 
 .item-footer ul li:hover {

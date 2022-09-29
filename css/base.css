@@ -2,6 +2,7 @@
 @import url("./introduce.css");
 @import url("./our-services.css");
 @import url("./information.css");
+@import url("./rating.css");
 @import url("./footer.css");
 * {
     box-sizing: border-box;
@@ -16,8 +17,9 @@
     --color-header-hover: #2E4E92;
     --color-button: #458FF6;
     --color-content: #7D7987;
-    --color-footer: #FFFFFF;
+    --color-white: #FFFFFF;
     --color-shadow: #f5f6fb;
+    --color-control-rating: #5B9BF3;
     --spacing: 34px;
     --columns: 3;
 }
@@ -37,7 +39,7 @@ a {
 
 /* titles */
 .titles-part {
-    font-size: 4.5rem;
+    font-size: 45px;
     color: var(--color-heading-text);
 }
 /* button learn more */
@@ -46,7 +48,7 @@ a {
     height: 60px;
     border-radius: 55px;
     border: solid 2px var(--color-button) ;
-    background: var(--color-footer);
+    background: var(--color-white);
     font-size: 18px;
     color: var(--color-button);
     font-weight: 600;
