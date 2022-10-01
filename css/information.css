@@ -1,56 +1,56 @@
-.information-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../assets/images/background-information.png");
+.container--information {
+    background-image: url("../assets/images/information/background-information.png");
     background-repeat: no-repeat;
     background-position: 100% 60%;
     position: relative;
 }
 
-.information {
+.inner-information {
     max-width: 1360px;
     width: 100%;
     padding-right: 100px;
 }
-.item-information {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.text-content {
+
+.information-content {
     width: 50%;
     padding-left: 130px;
 }
-.text-content h5 {
+
+.information-content__title {
     font-size: 36px;
-    color: var(--color-heading-text);
+    color: var(--color-title-slate-blue);
 }
 
-.text-content h5::after {
+.information-content__title::after {
     content: "";
     width: 56px;
     height: 2px;
     display: block;
-    background: var(--color-heading-text);
+    background: var(--color-black);
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.text-content p {
+.information-content__describing {
     font-size: 18px;
-    color: var(--color-content);
+    color: var(--color-text-content);
     margin-bottom: 40px;
 }
 
-.margin-leading-healthcare {
+.margin-top--100 {
     margin-top: 100px;
-    margin-bottom: 200px;
 }
 
-.margin-find-a-doctor {
-    margin-top: 350px;
+.margin-bottom--135 {
     margin-bottom: 135px;
+}
+
+.margin-top--350 {
+    margin-top: 350px;
+}
+
+.margin-bottom--200 {
+    margin-bottom: 200px;
 }
 
 .download-icon {
@@ -58,11 +58,11 @@
     margin-left: 10px;
 }
 
-.img-mobile-app {
+.mix-blend-mode--darken {
     mix-blend-mode: darken;
 }
 
-.information-container .element {
+.information-element {
     position: absolute;
     right: 0;
     top: 550px;
