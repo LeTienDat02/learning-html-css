@@ -5,244 +5,245 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Saviour Care</title>
 </head>
 <body>
-    <header class="header-container">
-        <div class="header">
-            <a href="/" class="logo">
-                <div class="ellipse">
+    <header class="container container--header">
+        <div class="inner inner--header">
+            <a href="/" class="saviour-care-logo">
+                <div class="saviour-care-logo__ellipse saviour-care-logo__ellipse--background-primary">
                     <img src="./assets/icons/logo/logo-shapes.png" alt="LOGO">
                 </div>
-                <h5 class="name-logo">
+                <h5 class="saviour-care-logo__name saviour-care-logo__name--header-theme">
                     saviour care
                 </h5>
             </a>
-            <nav class="nav">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">Find a doctor</a></li>
-                    <li><a href="/">Apps</a></li>
-                    <li><a href="/">Testimonials</a></li>
-                    <li><a href="/">About us</a></li>
+            <nav class="header__nav">
+                <ul class="header__nav-list-items">
+                    <li><a class="header__nav-item" href="/">Home</a></li>
+                    <li><a class="header__nav-item" href="/">Find a doctor</a></li>
+                    <li><a class="header__nav-item" href="/">Apps</a></li>
+                    <li><a class="header__nav-item" href="/">Testimonials</a></li>
+                    <li><a class="header__nav-item" href="/">About us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="introduce-container">
-        <div class="introduce">
-            <div class="text">
-                <h2>Virtual healthcare Saviour for you</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-                <button>Consult today</button>
+    <div class="container">
+        <div class="inner inner--introduce">
+            <div class="introduce__content">
+                <h2 class="introduce__content-title">Virtual healthcare Saviour for you</h2>
+                <p class="introduce__content-describing">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+                <button class="btn btn-background-blue">Consult today</button>
             </div>
-            <img src="./assets/images/doctor-img.png" alt="doctor"/>
+            <img src="./assets/images/introduce/doctor-img.png" alt="doctor"/>
         </div>
     </div>
 
-    <div class="our-services-container">
-        <div class="our-services">
-            <div class="title-our-services">
-                <h2 class="titles-part">Services we Offer</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+    <div class="container container--our-services">
+        <div class="inner-our-services">
+            <div class="our-sevices-top">
+                <h2 class="our-sevices-top__title">Services we Offer</h2>
+                <p class="our-sevices-top__describing">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
             </div>
-            <div class="items-services">
+            <div class="our-sevices-list-card">
                 <div class="card-services">
-                    <div class="icon">
+                    <div class="card-services__icon">
                         <img src="./assets/icons/our-sevices/search-icon.png" alt="search">
                     </div>
-                    <div class="bottom">
-                        <h5 class="title">Search doctor</h5>
-                        <p class="content">Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
+                    <div class="card-services__content">
+                        <h5 class="card-services__content-title">Search doctor</h5>
+                        <p class="card-services__content-describing">Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
                     </div>
                 </div>
                 <div class="card-services">
-                    <div class="icon">
+                    <div class="card-services__icon">
                         <img src="./assets/icons/our-sevices/online-pharmacy-icon.png" alt="search">
                     </div>
-                    <div class="bottom">
-                        <h5 class="title">Online pharmacy</h5>
-                        <p class="content">Buy  your medicines with our mobile application with a simple delivery system</p>
+                    <div class="card-services__content">
+                        <h5 class="card-services__content-title">Online pharmacy</h5>
+                        <p class="card-services__content-describing">Buy  your medicines with our mobile application with a simple delivery system</p>
                     </div>
                 </div>
                 <div class="card-services">
-                    <div class="icon">
+                    <div class="card-services__icon">
                         <img src="./assets/icons/our-sevices/consultation-icon.png" alt="search">
                     </div>
-                    <div class="bottom">
-                        <h5 class="title">Consultation</h5>
-                        <p class="content">Free consultation with our trusted doctors and get the best recomendations</p>
+                    <div class="card-services__content">
+                        <h5 class="card-services__content-title">Consultation</h5>
+                        <p class="card-services__content-describing">Free consultation with our trusted doctors and get the best recomendations</p>
                     </div>
                 </div>
                 <div class="card-services">
-                    <div class="icon">
+                    <div class="card-services__icon">
                         <img src="./assets/icons/our-sevices/details-info-icon.png" alt="search">
                     </div>
-                    <div class="bottom">
-                        <h5 class="title">Details info</h5>
-                        <p class="content">Free consultation with our trusted doctors and get the best recomendations</p>
+                    <div class="card-services__content">
+                        <h5 class="card-services__content-title">Details info</h5>
+                        <p class="card-services__content-describing">Free consultation with our trusted doctors and get the best recomendations</p>
                     </div>
                 </div>
                 <div class="card-services">
-                    <div class="icon">
+                    <div class="card-services__icon">
                         <img src="./assets/icons/our-sevices/emergency-care-icon.png" alt="search">
                     </div>
-                    <div class="bottom">
-                        <h5 class="title">Emergency care</h5>
-                        <p class="content">You can get 24/7 urgent care for yourself or your children and you lovely family</p>
+                    <div class="card-services__content">
+                        <h5 class="card-services__content-title">Emergency care</h5>
+                        <p class="card-services__content-describing">You can get 24/7 urgent care for yourself or your children and you lovely family</p>
                     </div>
                 </div>
                 <div class="card-services">
-                    <div class="icon">
+                    <div class="card-services__icon">
                         <img src="./assets/icons/our-sevices/tracking-icon.png" alt="search">
                     </div>
-                    <div class="bottom">
-                        <h5 class="title">Tracking</h5>
-                        <p class="content">Track and save your medical history and health data </p>
+                    <div class="card-services__content">
+                        <h5 class="card-services__content-title">Tracking</h5>
+                        <p class="card-services__content-describing">Track and save your medical history and health data </p>
                     </div>
                 </div>
+                <img class="our-services-element" src="./assets/images/element/element-1.png" alt="">
             </div>
-            <div class="btn-learn-more">
-                <button class="button">Learn more</button>
+            <div class="our-services-btn">
+                <button class="btn btn--primary">Learn more</button>
             </div>
         </div>
     </div>
 
-    <div class="information-container">
-        <img class="element" src="./assets/images/element.png" alt="element">
-        <div class="information">
-            <div class="item-information margin-leading-healthcare">
-                <img src="./assets/images/leading-healthcare.png" alt="leading-healthcare" class="img-infor">
-                <div class="text-content">
-                    <h5>
+    <div class="container container--information">
+        <div class="inner-information">
+            <div class="inner margin-top--100 margin-bottom--200">
+                <img src="./assets/images/information/leading-healthcare.png" alt="leading-healthcare">
+                <div class="information-content">
+                    <h5 class="information-content__title">
                         Leading healthcare providers
                     </h5>
-                    <p>
+                    <p class="information-content__describing">
                         Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride 
                         in the solutions we deliver
                     </p>
-                    <div class="btn-learn-more">
-                        <button class="button">Learn more</button>
+                    <div class="information-content__btn">
+                        <button class="btn btn--primary">Learn more</button>
                     </div>
                 </div>
             </div>
-            <div class="item-information">
-                <div class="text-content">
-                    <h5>
+            <div class="inner">
+                <div class="information-content">
+                    <h5 class="information-content__title">
                         Download our Saviour Care mobile app
                     </h5>
-                    <p>
+                    <p class="information-content__describing">
                         Our dedicated patient engagement app and 
                         web portal allow you to access information instantaneously (no tedeous form, long calls, 
                         or administrative hassle) and securely
                     </p>
-                    <div class="btn-learn-more">
-                        <button class="button">Download<i class="download-icon fa-solid fa-down-long"></i></button>
+                    <div class="information-content__btn">
+                        <button class="btn btn--primary">Download<i class="download-icon fa-solid fa-down-long"></i></button>
                     </div>
                 </div>
-                <img src="./assets/images/mobile-app.png" alt="mobile-app" class="img-infor img-mobile-app">
+                <img src="./assets/images/information/mobile-app.png" alt="mobile-app" class="mix-blend-mode--darken">
             </div>
-            <div class="item-information margin-find-a-doctor">
-                <img src="./assets/images/find-a-doctor.png" alt="leading-healthcare" class="img-infor">
-                <div class="text-content">
-                    <h5>
+            <div class="inner margin-top--350 margin-bottom--135">
+                <img src="./assets/images/information/find-a-doctor.png" alt="leading-healthcare">
+                <div class="information-content">
+                    <h5 class="information-content__title">
                         Find a Doctor near you
                     </h5>
-                    <p>
+                    <p class="information-content__describing">
                         Our  app and web portal allows you to find the doctor to your nearest location. 
                     </p>
-                    <div class="btn-learn-more">
-                        <button class="button">Find now</button>
+                    <div class="information-content__btn">
+                        <button class="btn btn--primary">Find now</button>
                     </div>
                 </div>
             </div>
         </div>
+        <img class="information-element" src="./assets/images/element/element-2.png" alt="element">
     </div>
 
-    <div class="rating-container">
-        <div class="rating">
-            <img class="element-bottom" src="./assets/images/rating/element-1.png" alt="element">
-            <div class="card-rating">
-                <img class="element-top" src="./assets/images/rating/element-2.png" alt="element">
-                <h3 class="title">What our customers are saying</h3>
-                <div class="content-rating">
-                    <div class="person-infor">
-                        <img src="./assets/images//rating/person-rating.png" alt="person-rating">
-                        <div class="person-name">
-                            <h5>Ak</h5>
+    <div class="container">
+        <div class="inner-rating">
+            <div class="card-rating background--primary">
+                <img class="inner-rating__element-top" src="./assets/images/element/element-1.png" alt="element">
+                <h3 class="card-rating__title">What our customers are saying</h3>
+                <div class="card-rating-content">
+                    <div class="card-rating-content__person">
+                        <img src="./assets/icons/rating/person-icon.png" alt="person-rating">
+                        <div class="card-rating-content__person-name">
+                            <h5 class="font-size--22">Ak</h5>
                             <p>Abc ltd</p>
                         </div>
                     </div>
-                    <div class="text-rating">
+                    <div class="card-rating-content__text">
                         “Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.” 
                     </div>
                 </div>
             </div>
-            <div class="control-list-rating">
-                <a href="/"><i class="icon-control fa-solid fa-left-long"></i></a>
-                <ul>
-                    <li><a id="element-focus" href="/"></a></li>
-                    <li><a href="/"></a></li>
-                    <li><a href="/"></a></li>
-                    <li><a href="/"></a></li>
+            <img class="inner-rating__element-bottom" src="./assets/images/element/element-1.png" alt="element">
+            <div class="control-rating">
+                <a class="control-rating__directional" href="/"><i class="control-rating__icon fa-solid fa-left-long"></i></a>
+                <ul class="control-rating__list">
+                    <li class="control-rating__list-item"><a id="element--focus" href="/"></a></li>
+                    <li class="control-rating__list-item"><a href="/"></a></li>
+                    <li class="control-rating__list-item"><a href="/"></a></li>
+                    <li class="control-rating__list-item"><a href="/"></a></li>
                 </ul>
-                <a href="/"><i class="icon-control fa-solid fa-right-long"></i></a>
+                <a class="control-rating__link" href="/"><i class="control-rating__icon fa-solid fa-right-long"></i></a>
             </div>
         </div>
     </div>
-    
-    <footer class="footer-container">
-        <button class="btn-on-top">
-            <i class="fa-solid fa-arrow-up"></i>
-        </button>
-        <img class="element-1" src="./assets/images/footer-img/element-1.png" alt="element-1">
-        <div class="footer">
-            <img class="element-2" src="./assets/images/footer-img/element-2.png" alt="element-2">
-            <div class="saviour-care-infor">
-                <div class="card-top">
-                    <a href="/" class="logo">
-                        <div class="ellipse">
+
+    <footer class="container container--footer background--primary">
+        <img class="footer-element-bottom" src="./assets/images/element/element-3.png" alt="element-1">
+        <div class="inner-footer">
+            <img class="footer-element-top" src="./assets/images/element/element-1.png" alt="element-2">
+            <div class="inner-footer__trademark">
+                <div class="trademark-top">
+                    <a href="/" class="saviour-care-logo">
+                        <div class="saviour-care-logo__ellipse saviour-care-logo__ellipse--background-white">
                             <img src="./assets/icons/logo/logo-shapes.png" alt="LOGO">
                         </div>
-                        <h5 class="name-logo">
+                        <h5 class="saviour-care-logo__name saviour-care-logo__name--footer-theme">
                             saviour care
                         </h5>
                     </a>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+                    <p class="trademark-top__describing">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
                 </div>
-                <p>©AK PVT LTD 2021. All rights reserved</p>
+                <p class="trademark-bottom">©AK PVT LTD 2021. All rights reserved</p>
             </div>
-            <div class="item-footer">
-                <h5>Company</h5>
-                <ul>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Testimonials</a></li>
-                    <li><a href="/">Find a doctor</a></li>
-                    <li><a href="/">Apps</a></li>
+            <div class="footer-category">
+                <h5 class="footer-category__title">Company</h5>
+                <ul class="footer-category__items">
+                    <li class="footer-category__items-item"><a href="/">About</a></li>
+                    <li class="footer-category__items-item"><a href="/">Testimonials</a></li>
+                    <li class="footer-category__items-item"><a href="/">Find a doctor</a></li>
+                    <li class="footer-category__items-item"><a href="/">Apps</a></li>
                 </ul>
             </div>
-            <div class="item-footer">
-                <h5>Region</h5>
-                <ul>
-                    <li><a href="/">Link</a></li>
-                    <li><a href="/">Link</a></li>
-                    <li><a href="/">Link</a></li>
-                    <li><a href="/">Link</a></li>
+            <div class="footer-category">
+                <h5 class="footer-category__title">Region</h5>
+                <ul class="footer-category__items">
+                    <li class="footer-category__items-item"><a href="/">Link</a></li>
+                    <li class="footer-category__items-item"><a href="/">Link</a></li>
+                    <li class="footer-category__items-item"><a href="/">Link</a></li>
+                    <li class="footer-category__items-item"><a href="/">Link</a></li>
                 </ul>
             </div>
-            <div class="item-footer">
-                <h5>Help</h5>
-                <ul>
-                    <li><a href="/">Help center</a></li>
-                    <li><a href="/">Contact support</a></li>
-                    <li><a href="/">Find a doctor</a></li>
-                    <li><a href="/">How it works</a></li>
+            <div class="footer-category">
+                <h5 class="footer-category__title">Help</h5>
+                <ul class="footer-category__items">
+                    <li class="footer-category__items-item"><a href="/">Help center</a></li>
+                    <li class="footer-category__items-item"><a href="/">Contact support</a></li>
+                    <li class="footer-category__items-item"><a href="/">Find a doctor</a></li>
+                    <li class="footer-category__items-item"><a href="/">How it works</a></li>
                 </ul>
             </div>
         </div>
+        <button class="btn btn--on-top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
     </footer>
 </body>
 </html>
