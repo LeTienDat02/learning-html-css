@@ -1,12 +1,6 @@
-.rating-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.inner-rating {
     padding-bottom: 150px;
     padding-top: 135px;
-}
-
-.rating {
     max-width: 1285px;
     width: 100%;
     position: relative;
@@ -16,32 +10,26 @@
     max-width: 1180px;
     width: 100%;
     border-radius: 24px;
-    background: linear-gradient(208.18deg, #6888C8 9.05%, #5A98F2 76.74%);
     padding: 75px 135px;
     text-align: center;
     margin: auto;
     position: relative;
     z-index: 2;
+    overflow: hidden;
 }
 
-.card-rating .title {
-    font-size: 36px;
-    color: var(--color-white);
-}
-
-.card-rating .element-top {
+.inner-rating__element-top {
     position: absolute;
     top: 10px;
     right: -50px;
 }
 
-.rating .element-bottom {
-    position: absolute;
-    left: 0;
-    bottom: 115px;
+.card-rating__title {
+    font-size: 36px;
+    color: var(--color-white);
 }
 
-.card-rating .title::after {
+.card-rating__title::after {
     content: "";
     width: 60px;
     height: 2px;
@@ -51,12 +39,12 @@
     margin-top: 40px;
 }
 
-.content-rating {
+.card-rating-content {
     display: flex;
     margin-top: 100px;
 }
 
-.content-rating .person-infor {
+.card-rating-content__person {
     display: flex;
     align-items: center;
     flex-basis: 50%;
@@ -65,16 +53,16 @@
     text-align: left;
 }
 
-.person-name {
+.card-rating-content__person-name {
     margin-left: 50px;
     line-height: 48px;
 }
 
-.person-name h5 {
+.font-size--22 {
     font-size: 22px;
 }
 
-.content-rating .text-rating{
+.card-rating-content__text {
     flex-basis: 50%;
     font-size: 22px;
     line-height: 55px;
@@ -85,46 +73,55 @@
     color: var(--color-white);
 }
 
-.control-list-rating {
+.inner-rating__element-bottom {
+    position: absolute;
+    left: 0px;
+    bottom: 270px;
+}
+
+.control-rating {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
 }
 
-.icon-control {
-    color: var(--color-control-rating);
+.control-rating__icon {
+    color: var(--color-blue);
     opacity: 0.3;
     font-size: 28px;
 }
 
-.icon-control:hover {
+.control-rating__icon:hover {
     opacity: 1;
 }
 
-.control-list-rating ul{
+.control-rating__list {
     display: flex;
 }
 
-.control-list-rating ul a {
+.control-rating__list-item a {
     width: 11px;
     height: 11px;
-    background: var(--color-control-rating);
+    background: var(--color-blue);
     opacity: 0.3; 
     border-radius: 50%;
     margin: 0 20px;
     display: block;
 }
 
-.control-list-rating ul li:first-child {
-    margin-left: 96px;
-}
-
-.control-list-rating ul li:last-child {
-    margin-right: 96px;
-}
-
-#element-focus {
+.control-rating__list-item:hover a {
     opacity: 1;
 }
 
+.control-rating__list-item:first-child {
+    margin-left: 96px;
+}
+
+.control-rating__list-item:last-child {
+    margin-right: 96px;
+}
+
+#element--focus {
+    opacity: 1;
+}
