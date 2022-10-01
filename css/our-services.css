@@ -1,54 +1,59 @@
-.our-services-container {
-    background-image: url("../assets/images/backgound-our-services.png");
+.container--our-services {
+    background-image: url("../assets/images/our-services/backgound-our-services.png");
     background-repeat: no-repeat;
     background-position: center;
     background-position: left;
-    padding: 100px 0;
-    display: flex;
-    justify-content: center;
 }
 
-.our-services {
+.inner-our-services {
     max-width: 1120px;
     width: 100%;
     text-align: center;
+    padding: 100px 0;
 }
 
-.title-our-services {
+.our-sevices-top {
     max-width: 952px;
     padding: 0 55px;
     margin: auto;
 }
 
-.title-our-services h2::after {
+.our-sevices-top__title {
+    font-size: 45px;
+    color: var(--color-title-slate-blue);
+}
+
+.our-sevices-top__title::after {
     content: "";
     width: 56px;
     height: 2px;
     display: block;
     margin: auto;
-    background: var(--color-heading-text);
+    background: var(--color-black);
     margin-top: 35px;
     margin-bottom: 35px;
 }
 
-.title-our-services p {
+.our-sevices-top__describing {
     font-size: 19px;
     color: #CCD2E9;
     font-weight: 600;
 }
 
-.items-services {
+.our-sevices-list-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-left: calc(-1*var(--spacing));
     margin-bottom: calc(-1*var(--spacing));
     margin-top: 86px;
+    position: relative;
 }
 
-.items-services :first-child {
+.our-sevices-list-card :first-child {
     box-shadow: none;
 }
+
 .card-services {
     width: calc(calc(100% / var(--columns)) - var(--spacing));
     background: var(--color-white);
@@ -56,26 +61,34 @@
     margin-bottom: var(--spacing);
     padding: 50px 40px;
     border-radius: 20px;
-    box-shadow: 10px 50px 40px var(--color-shadow);
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
-.card-services .icon {
+.card-services__icon {
     height: 100px;
     margin-bottom: 30px;
 }
 
-.bottom .title {
+.card-services__content-title {
     font-size: 24px;
-    color: #000000;
+    color: var(--color-black);
     margin-bottom: 20px;
+} 
+
+.card-services__content-describing {
+    color: var(--color-text-content);
 }
 
-.bottom .content {
-    color: var(--color-content);
-}
-
-.our-services .btn-learn-more {
+.our-services-btn {
     margin-top: 70px;
+}
+
+.our-services-element {
+    position: absolute;
+    right: -50px;
+    top: 40%;
+    z-index: 1;
 }
