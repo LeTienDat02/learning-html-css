@@ -1,29 +1,19 @@
-.inner--introduce {
+.introduce__content {
     max-width: 1400px;
     width: 100%;
     padding-top: 220px;
     padding-bottom: 100px;
 }
 
-.introduce__content-title {
+.introduce__text-title {
     font-size: 48px;
     color: var(--color-title-sky-blue);
     margin-bottom: 40px;
 }
 
-.introduce__content-describing {
+.introduce__text-describing {
     font-size: 19px;
     color: #93C1F9;
     font-weight: 600;
     margin-bottom: 135px;
-}
-
-.btn-background-blue {
-    width: 200px;
-    height: 70px;
-    color: var(--color-white);
-    background: var(--color-button);
-    border: none;
-    border-radius: 55px;
-    font-size: 19px;
 }

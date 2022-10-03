@@ -1,27 +1,32 @@
-.container--information {
+.information__background {
     background-image: url("../assets/images/information/background-information.png");
     background-repeat: no-repeat;
     background-position: 100% 60%;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
-.inner-information {
+.information__content {
     max-width: 1360px;
     width: 100%;
     padding-right: 100px;
 }
 
-.information-content {
+.information-category {
     width: 50%;
     padding-left: 130px;
 }
 
-.information-content__title {
+.information-category__title {
     font-size: 36px;
     color: var(--color-title-slate-blue);
 }
 
-.information-content__title::after {
+.information-category__title::after {
     content: "";
     width: 56px;
     height: 2px;
@@ -31,7 +36,7 @@
     margin-bottom: 30px;
 }
 
-.information-content__describing {
+.information-category__describing {
     font-size: 18px;
     color: var(--color-text-content);
     margin-bottom: 40px;

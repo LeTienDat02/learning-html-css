@@ -18,20 +18,3 @@
     text-transform: capitalize;
     margin-left: 10px;
 }
-
-/* button */
-.btn {
-    cursor: pointer;
-    font-weight: 600;
-    border: none;
-}
-
-.btn--primary {
-    width: 200px;
-    height: 60px;
-    border-radius: 55px;
-    border: solid 2px var(--color-button) ;
-    background: var(--color-white);
-    font-size: 18px;
-    color: var(--color-button);
-}

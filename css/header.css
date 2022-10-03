@@ -1,4 +1,4 @@
-.container--header {
+.header {
     height: 120px;
     position: fixed;
     z-index: 10;
@@ -6,9 +6,10 @@
     left: 0;
     right: 0;
     background: var(--color-white);
+    
 }
 
-.inner--header {
+.header__content {
     max-width: 1230px;
     width: 100%;
 }

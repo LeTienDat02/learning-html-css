@@ -1,8 +1,8 @@
-@import url("./variables.css");
+@import url("variables.css");
 @import url("layouts.css");
 @import url("reset.css");
 @import url("globals.css");
-
+@import url("buttons.css");
 
 @import url("./header.css");
 @import url("./introduce.css");

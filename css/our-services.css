@@ -1,11 +1,17 @@
-.container--our-services {
+.our-services__background {
     background-image: url("../assets/images/our-services/backgound-our-services.png");
     background-repeat: no-repeat;
     background-position: center;
     background-position: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
-.inner-our-services {
+.our-services__content {
     max-width: 1120px;
     width: 100%;
     text-align: center;
