@@ -60,7 +60,7 @@
     box-shadow: none;
 }
 
-.card-services {
+.card--services {
     width: calc(calc(100% / var(--columns)) - var(--spacing));
     background: var(--color-white);
     margin-left: var(--spacing);
@@ -68,23 +68,21 @@
     padding: 50px 40px;
     border-radius: 20px;
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-    display: flex;
-    flex-direction: column;
     z-index: 2;
 }
 
-.card-services__icon {
+.card__services-icon {
     height: 100px;
     margin-bottom: 30px;
 }
 
-.card-services__content-title {
+.services-content__title {
     font-size: 24px;
     color: var(--color-black);
     margin-bottom: 20px;
 } 
 
-.card-services__content-describing {
+.services-content__describing {
     color: var(--color-text-content);
 }
 
