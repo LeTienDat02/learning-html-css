@@ -1,6 +1,4 @@
-.header-container {
-    display: flex;
-    justify-content: center;
+.header {
     height: 120px;
     position: fixed;
     z-index: 10;
@@ -8,62 +6,50 @@
     left: 0;
     right: 0;
     background: var(--color-white);
-    /* box-shadow: 0px 0px 5px var(--color-content); */
+    
 }
 
-.header {
+.header__content {
     max-width: 1230px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-    /* logo */
-.logo {
-    display: flex;
-    align-items: center;
-}
-.ellipse {
-    background-image: url("../assets/icons/logo/ellipse.png");
-    background-repeat: no-repeat;
-    width: 41px;
-    height: 41px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.ellipse img {
-    width: 30px;
-    height: 27px;
-}
-.name-logo {
-    font-size: 24px;
-    text-transform: capitalize;
-    margin-left: 10px;
-    color: var(--color-heading-text)
-}
-    /* nav */
-.nav {
-    margin-right: -2.5px;
 }
 
-.nav ul {
+    /* logo */
+.saviour-care-logo__ellipse--background-primary {
+    background: var(--color-primary);
+}
+
+.saviour-care-logo__name--header-theme {
+    color: var(--color-title-slate-blue);
+}
+
+    /* nav */
+.header__nav {
+    margin-right: -20px;
+}
+
+.header__nav-list-items {
     height: 100%;;
     display: flex;
     align-items: center;
 }
 
-.nav li {
-    padding-right: 25px;
+.header__nav-item {
+    color: var(--color-header-nav);
+    font-weight: 700;
+    margin: 0 20px;
+    opacity: 0.5;
 }
 
-.nav a {
+.header__nav-item {
     color: var(--color-content);
     font-weight: 600;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.nav li:hover a {
+.header__nav-item:hover {
     color: var(--color-header-hover);
     border-bottom: solid 2px var(--color-header-hover);
+    opacity: 1;
 }

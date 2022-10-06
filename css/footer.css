@@ -1,21 +1,22 @@
-.footer-container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    background: linear-gradient(183.41deg, #6888C8 -8.57%, #5A98F2 82.96%);
+.footer__backgound {
+    background: linear-gradient(208.18deg, var(--color-background-linear-first) 9.05%, var(--color-background-linear-last) 76.74%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
-
-.footer {
+.footer__content {
     display: flex;
+    justify-content: space-between;
     max-width: 1285px;
     width: 100%;
     padding-top: 110px;
     padding-bottom: 90px;
-    justify-content: space-between;
     position: relative;
 }
 
-.saviour-care-infor {
+.footer__content-trademark {
     max-width: 400px;
     color: var(--color-white);
     display: flex;
@@ -24,80 +25,76 @@
     height: 200px;
 }
 
-.card-top .ellipse {
-    background: var(--color-white);
-    border-radius: 50%;
+.saviour-care-logo__ellipse--background-white {
+    background:var(--color-white);
 }
 
-.card-top .name-logo {
+.saviour-care-logo__name--footer-theme {
     color: var(--color-white);
 }
 
-.card-top p {
+.trademark-top__describing {
     font-size: 18px;
     font-family: 'Roboto';
     margin-top: 20px;
     line-height: 27px;
 }
 
-.saviour-care-infor p {
+.trademark-bottom {
     font-weight: 200;
 }
 
-.item-footer {
+.footer-category {
     display: flex;
     flex-direction: column;
 }
 
-.item-footer h5 {
+.footer-category__title {
     font-size: 20px;
     margin-bottom: 30px;
     color: var(--color-white);
 }
 
-.item-footer ul {
+.footer-category__items {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
 }
 
-.item-footer ul a {
+.footer-category__items-item a{
     font-weight: 300;
     color: var(--color-white);
 }
 
-.item-footer ul li:hover {
+.footer-category__items-item:hover {
     animation: move-right-10 0.2s linear;
     transform: translateX(10px);
 }
 
-.footer-container > img {
+.footer-element-top {
     position: absolute;
+    right: 0px;
+    top: -70px;
+    z-index: -1;
 }
 
-.footer-container .element-1 {
+.footer-element-bottom {
+    position: absolute;
     left: 5px;
     bottom: 5px;
 }
 
-.footer .element-2 {
-    position: absolute;
-    right: 0px;
-    top: -80px;
-    z-index: -1;
-}
-
-.btn-on-top {
+.footer__btn-on-top {
+    cursor: pointer;
+    border: none;
     position: fixed;
     bottom: 500px;
     right: 150px;
     font-size: 40px;
     color: rgba(103, 195, 243, 0.65);
     background: none;
-    border: none;
 }
-
 @keyframes move-right-10 {
     0% { 
         transform: translateX(0px);
