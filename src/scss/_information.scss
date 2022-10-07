@@ -1,0 +1,44 @@
+@import "variables";
+@import "mixins";
+
+.information {
+    &__background {
+        @include background(none,"../assets/images/information/background-information.png", 100% 60%)
+    }
+    &__content {
+        @include content($max-width,0 120px 0 20px);
+    }
+    &-category {
+        width: 50%;
+        padding-left: 130px;
+        &__title {
+            font-size: 36px;
+            color: $color-title-slate-blue;
+            &::after {
+                content: "";
+                width: 56px;
+                height: 2px;
+                display: block;
+                background: $color-black;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+        &__describing {
+            font-size: 18px;
+            color: $color-text-content;
+            margin-bottom: 40px;
+        }
+    }
+    .download-icon {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    
+    .mix-blend-mode--darken {
+        mix-blend-mode: darken;
+    }
+    &-element {
+        @include element('tr',0,550px,none)
+    }
+}
