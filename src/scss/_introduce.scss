@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixins";
+
+.introduce {
+    &__content {
+        @include content($max-width,220px 0 100px 0);
+    }
+    &__text-title {
+        font-size: 48px;
+        color: $color-title-sky-blue;
+        margin-bottom: 40px;
+    }
+    &__text-describing {
+        font-size: 19px;
+        color: #93C1F9;
+        font-weight: 600;
+        margin-bottom: 135px;
+    }
+}
