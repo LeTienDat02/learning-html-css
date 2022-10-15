@@ -1,12 +1,9 @@
-@import "variables";
-@import "mixins";
-
 .rating {
     &__content{
         @include content($max-width,135px 60px 150px 60px);
         position: relative;
     }
-    .card--rating {
+    &__card {
         max-width: 1180px;
         width: 100%;
         border-radius: 24px;
@@ -21,37 +18,22 @@
     &__element-top {
         @include element('tr',-50px,10px,none)
     }
-    .card {
-        &__rating-title {
-            font-size: 36px;
-            color: $color-white;
-            &::after {
-                content: "";
-                width: 60px;
-                height: 2px;
-                background: $color-white;
-                display: block;
-                margin: auto;
-                margin-top: 40px;
-            }
-        }
-        &__rating-describing {
-            display: flex;
-            margin-top: 100px;
+    &__title {
+        font-size: 36px;
+        color: $color-white;
+        &::after {
+            content: "";
+            width: 60px;
+            height: 2px;
+            background: $color-white;
+            display: block;
+            margin: auto;
+            margin-top: 40px;
         }
     }
-    .describing {
-        &-person {
-            @include flex-center-y;
-            flex-basis: 50%;
-            font-size: 18px;
-            color: $color-white;
-            text-align: left;
-            &__name {
-                margin-left: 50px;
-                line-height: 48px;
-            }
-        }
+    &__describing {
+        display: flex;
+        margin-top: 100px;
         &-text {
             flex-basis: 50%;
             font-size: 22px;
@@ -63,14 +45,25 @@
             color: $color-white;
         }
     }
+   &__person {
+        @include flex-center-y;
+        flex-basis: 50%;
+        font-size: 18px;
+        color: $color-white;
+        text-align: left;
+        &-name {
+            margin-left: 50px;
+            line-height: 48px;
+        }
+   }
     &__element-bottom {
         @include element('bl',30px,270px,none)
     }
-    .control-rating {
+    &__control {
         @include flex-center-x;
         @include flex-center-y;
         margin-top: 50px;
-        &__icon {
+        &-icon {
             color: $color-blue;
             opacity: 0.3;
             font-size: 28px;
@@ -78,27 +71,27 @@
                 opacity: 1;
             }
         }
-        &__list {
+        &-list {
             display: flex;
-            &-item {
-                a {
-                    width: 11px;
-                    height: 11px;
-                    background: $color-blue;
-                    opacity: 0.3; 
-                    border-radius: 50%;
-                    margin: 0 20px;
-                    display: block;
-                    &:hover {
-                        opacity: 1;
-                    }
+        }
+        &-item {
+            a {
+                width: 11px;
+                height: 11px;
+                background: $color-blue;
+                opacity: 0.3; 
+                border-radius: 50%;
+                margin: 0 20px;
+                display: block;
+                &:hover {
+                    opacity: 1;
                 }
-                &:first-child {
-                    margin-left: 96px;
-                }
-                &:last-child {
-                    margin-right: 96px;
-                }
+            }
+            &:first-child {
+                margin-left: 96px;
+            }
+            &:last-child {
+                margin-right: 96px;
             }
         }
     }

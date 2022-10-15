@@ -1,5 +1,3 @@
-@import "mixins";
-
 .btn {
     font-weight: 600;
     border: none;
@@ -10,6 +8,17 @@
     @include btn--theme(200px, 60px, 55px,solid 2px $color-button, $color-white, 18px, $color-button)
 }
 
-.btn--background-blue {
+.btn--secondary {
     @include btn--theme(200px, 70px, 55px,none, $color-button, 19px, $color-white)
+}
+
+.btn--on-top {
+    cursor: pointer;
+    border: none;
+    position: fixed;
+    bottom: 500px;
+    right: 150px;
+    font-size: 40px;
+    color: rgba(103, 195, 243, 0.65);
+    background: none;
 }

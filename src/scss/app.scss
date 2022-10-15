@@ -1,9 +1,12 @@
 @import "reset";
 @import "variables";
-@import "globals";
+@import "mixins";
+@import "global";
 @import "layouts";
 @import "untils";
 @import "buttons";
+@import "animations";
+@import "icons";
 
 @import "header";
 @import "introduce";

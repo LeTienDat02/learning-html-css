@@ -1,6 +1,3 @@
-@import "variables";
-@import "mixins";
-
 .container {
     @include flex-center-x;
     position: relative;

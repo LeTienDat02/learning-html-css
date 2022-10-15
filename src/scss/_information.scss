@@ -1,6 +1,3 @@
-@import "variables";
-@import "mixins";
-
 .information {
     &__background {
         @include background(none,"../assets/images/information/background-information.png", 100% 60%)
@@ -8,10 +5,10 @@
     &__content {
         @include content($max-width,0 120px 0 20px);
     }
-    &-category {
+    &__item {
         width: 50%;
         padding-left: 130px;
-        &__title {
+        &-title {
             font-size: 36px;
             color: $color-title-slate-blue;
             &::after {
@@ -24,21 +21,13 @@
                 margin-bottom: 30px;
             }
         }
-        &__describing {
+        &-describing {
             font-size: 18px;
             color: $color-text-content;
             margin-bottom: 40px;
         }
     }
-    .download-icon {
-        font-size: 15px;
-        margin-left: 10px;
-    }
-    
-    .mix-blend-mode--darken {
-        mix-blend-mode: darken;
-    }
-    &-element {
+    &__element {
         @include element('tr',0,550px,none)
     }
 }
