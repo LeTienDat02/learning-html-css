@@ -1,6 +1,6 @@
 # learning-html-css
 ### install dependency
-    `npm install`
+    `$ npm install`
 ### run project
     `$ npm run sass` 
-    `open Live Server`
+     open Live Server
