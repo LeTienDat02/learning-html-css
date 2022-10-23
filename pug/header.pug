@@ -1,0 +1,15 @@
+- var navItems = {'#' :'Home', '##':'Find a doctor', '###':'App', '####':'Testimonials', '#####':'About us'}
+
+header.header
+    .container
+        .header__content
+            .inner
+                a(href="#" class="saviour-care-logo")
+                    div(class="saviour-care-logo__ellipse saviour-care-logo__ellipse--background-primary")
+                        img(src="../assets/icons/logo/logo-shapes.png" alt="LOGO")
+                    h5(class="saviour-care-logo__name saviour-care-logo__name--header-theme") saviour care
+                nav.header__nav
+                    ul.header__nav-list-items
+                        each val,key in navItems
+                            li
+                                a(class="header__nav-item" href=key)=val
