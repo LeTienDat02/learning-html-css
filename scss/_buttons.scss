@@ -1,0 +1,8 @@
+.btn {
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    &--secondary {
+        @include btn--theme(200px, 70px, 55px,none, $color-button, 19px, $color-white)
+    }
+}
