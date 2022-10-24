@@ -4,4 +4,8 @@ node_modules/
 *.sass.map
 *.scss.map
 css/app.css
+<<<<<<< HEAD
 package-lock.json
+=======
+package-lock.json
+>>>>>>> c6d71f33d9bd4557b846157a8cb22818ef80e010
