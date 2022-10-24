@@ -1,5 +1,3 @@
-- var navItems = {'#' :'Home', '##':'Find a doctor', '###':'App', '####':'Testimonials', '#####':'About us'}
-
 header.header
     .container
         .header__content
@@ -10,6 +8,6 @@ header.header
                     h5(class="saviour-care-logo__name saviour-care-logo__name--header-theme") saviour care
                 nav.header__nav
                     ul.header__nav-list-items
-                        each val,key in navItems
+                        each item in navItems
                             li
-                                a(class="header__nav-item" href=key)=val
+                                a(class="header__nav-item" href=item.url)=item.name
