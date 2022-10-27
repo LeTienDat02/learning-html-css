@@ -5,6 +5,6 @@
 ### run project
 ```npm run pug
 ```
-```$ npm run sass
+```npm run sass
 ```
     open Live Server
