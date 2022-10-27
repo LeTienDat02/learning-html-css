@@ -1,0 +1,23 @@
+{
+  "name": "saviour-care",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass ./src/scss/app.scss ./css/app.css --watch",
+    "build": "sass ./src/scss/app.scss ./css/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeTienDat02/learning-html-css.git"
+  },
+  "author": "Dat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeTienDat02/learning-html-css/issues"
+  },
+  "homepage": "https://github.com/LeTienDat02/learning-html-css#readme",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}
