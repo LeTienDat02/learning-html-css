@@ -1,7 +1,0 @@
-node_modules/
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
-css/app.css
-package-lock.json
