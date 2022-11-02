@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./scss/app.scss ./public/app.css  --watch",
-    "pug": "pug ./pug/index.pug -o ./public --watch --pretty"
+    "sass": "sass ./scss/app.scss ./build/app.css  --watch",
+    "pug": "pug ./pug/index.pug -o ./build --watch --pretty"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,8 @@
     "url": "https://github.com/LeTienDat02/learning-html-css/issues"
   },
   "homepage": "https://github.com/LeTienDat02/learning-html-css#readme",
+  "dependencies": {
+  },
   "devDependencies": {
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.55.0"
