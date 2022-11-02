@@ -3,7 +3,5 @@ node_modules/
 *.css.map
 *.sass.map
 *.scss.map
-public/app.css
-public/index.html
+build/
 packages/pug-error/lib
-package-lock.json
