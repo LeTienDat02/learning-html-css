@@ -1,0 +1,35 @@
+@mixin flex-center-x {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-center-y {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-colums {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin content($max-width,$padding) {
+    max-width: $max-width;
+    width: 100%;
+    padding: $padding;
+}
+
+@mixin btn--theme ($width,$height,$border-radius,$boder,$background,$font-size,$color){
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+    border: $boder;
+    background: $background;
+    font-size: $font-size;
+    color: $color;
+}
