@@ -17,6 +17,9 @@
     @include flex-center-y;
 }
 
-::selection {
-    background: $color-primary;
+html,
+body {
+    ::selection {
+        background: $color-primary;
+    }
 }
