@@ -1,0 +1,8 @@
+mixin footerCategory(items)
+    each item in items
+        .footer__category
+                h5.footer__category-title= item.title
+                ul.footer__category-items
+                    each link in item.items
+                        li.footer__category-item
+                            a(href= link.url)= link.name
