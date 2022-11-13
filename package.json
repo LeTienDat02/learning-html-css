@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./scss/app.scss ./build/app.css  --watch",
-    "pug": "pug ./pug/index.pug -o ./build --watch --pretty"
+    "sass": "sass ./src/scss/app.scss ./build/app.css  --watch",
+    "pug": "pug ./src/pug/index.pug -o ./build --watch --pretty"
   },
   "repository": {
     "type": "git",
