@@ -12,4 +12,7 @@
         color: rgba(103, 195, 243, 0.65);
         background: none;
     }
+    &--secondary {
+        @include btn--theme(200px, 70px, 55px,none, $color-button, 19px, $color-white)
+    }
 }
