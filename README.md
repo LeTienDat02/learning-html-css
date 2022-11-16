@@ -1,8 +1,10 @@
-# learning-html-css
+# learning-html-css-pug
 ### install dependency
-    $ npm install
+```npm install
+```
 ### run project
-    $ npm run build
-
+```npm run pug
+```
+```npm run sass
+```
     open Live Server
-
