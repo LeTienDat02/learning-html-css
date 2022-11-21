@@ -1,69 +1,77 @@
 @mixin flex-center-x {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 @mixin flex-center-y {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 @mixin flex-space-between {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 @mixin flex-colums {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-@mixin content($max-width,$padding) {
-    max-width: $max-width;
-    width: 100%;
-    padding: $padding;
+@mixin content($max-width, $padding) {
+  max-width: $max-width;
+  width: 100%;
+  padding: $padding;
 }
 
-@mixin btn--theme ($width,$height,$border-radius,$boder,$background,$font-size,$color){
-    width: $width;
-    height: $height;
-    border-radius: $border-radius;
-    border: $boder;
+@mixin btn--theme(
+  $width,
+  $height,
+  $border-radius,
+  $boder,
+  $background,
+  $font-size,
+  $color
+) {
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+  border: $boder;
+  background: $background;
+  font-size: $font-size;
+  color: $color;
+}
+
+@mixin background($background, $image, $position) {
+  @if $background == 'none' {
+    background-image: url($image);
+  } @else {
     background: $background;
-    font-size: $font-size;
-    color: $color;
+  }
+  background-repeat: no-repeat;
+  background-position: $position;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
-@mixin background ($background,$image,$position){
-    @if $background == 'none' {
-        background-image: url($image);
-    }@else {
-        background: $background;
-    }
-    background-repeat: no-repeat;
-    background-position: $position;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-@mixin element($pos,$x,$y,$z) {
-    position: absolute;
-    @if $pos == 'tl' {
-        left: $x;
-        top: $y;
-    }@else if $pos == 'tr' {
-        right: $x;
-        top: $y;
-    }@else if $pos == 'bl' {
-        left: $x;
-        bottom: $y;
-    }@else if $pos == 'br' {
-        right: $x;
-        bottom: $y;
-    }
-    z-index: $z;
+@mixin element($pos, $x, $y, $z) {
+  position: absolute;
+  @if $pos == 'tl' {
+    left: $x;
+    top: $y;
+  } @else if $pos == 'tr' {
+    right: $x;
+    top: $y;
+  } @else if $pos == 'bl' {
+    left: $x;
+    bottom: $y;
+  } @else if $pos == 'br' {
+    right: $x;
+    bottom: $y;
+  }
+  z-index: $z;
 }

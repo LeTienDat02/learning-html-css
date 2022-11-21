@@ -1,18 +1,26 @@
 .btn {
-    font-weight: 600;
-    border: none;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  &--on-top {
     cursor: pointer;
-    &--on-top {
-        cursor: pointer;
-        border: none;
-        position: fixed;
-        bottom: 500px;
-        right: 150px;
-        font-size: 40px;
-        color: rgba(103, 195, 243, 0.65);
-        background: none;
-    }
-    &--secondary {
-        @include btn--theme(200px, 70px, 55px,none, $color-button, 19px, $color-white)
-    }
+    border: none;
+    position: fixed;
+    bottom: 500px;
+    right: 150px;
+    font-size: 40px;
+    color: rgba(103, 195, 243, 0.65);
+    background: none;
+  }
+  &--secondary {
+    @include btn--theme(
+      200px,
+      70px,
+      55px,
+      none,
+      $color-button,
+      19px,
+      $color-white
+    );
+  }
 }
