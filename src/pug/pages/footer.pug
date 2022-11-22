@@ -1,26 +1,32 @@
 include ../constants/footer-category.pug
 footer.footer
-    .container
-        .footer__background
-        img.footer__element-bottom(src='../assets/images/element/element-3.png' alt='element-1')
-        .footer__content
-            img.footer__element-top(src='../assets/images/element/element-1.png' alt='element-2')
-            .footer__trademark
-                .footer__trademark-top
-                    a.saviour-care-logo(href='/')
-                        .saviour-care-logo__ellipse.saviour-care-logo__ellipse--background-white
-                            img(src='../assets/icons/logo/logo-shapes.png' alt='LOGO')
-                        h5.saviour-care-logo__name.saviour-care-logo__name--footer-theme
-                            | saviour care
-                    p.footer__trademark-describing
-                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                p.footer__trademark-bottom AK PVT LTD 2021. All rights reserved
-            each item in items
-                .footer__category
-                        h5.footer__category-title= item.title
-                        ul.footer__category-items
-                            each link in item.items 
-                                li.footer__category-item
-                                    a(href= link.url)= link.name
-        button.btn.btn--on-top
-            i.fa-solid.fa-arrow-up
+  .container
+    .footer__background
+    img.footer__element-bottom(
+      src='../assets/images/element/element-3.png',
+      alt='element-1'
+    )
+    .footer__content
+      img.footer__element-top(
+        src='../assets/images/element/element-1.png',
+        alt='element-2'
+      )
+      .footer__trademark
+        .footer__trademark-top
+          a.saviour-care-logo(href='/')
+            .saviour-care-logo__ellipse.saviour-care-logo__ellipse--background-white
+              img(src='../assets/icons/logo/logo-shapes.png', alt='LOGO')
+            h5.saviour-care-logo__name.saviour-care-logo__name--footer-theme
+              | saviour care
+          p.footer__trademark-describing
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+        p.footer__trademark-bottom AK PVT LTD 2021. All rights reserved
+      each item in items
+        .footer__category
+          h5.footer__category-title= item.title
+          ul.footer__category-items
+            each link in item.items 
+              li.footer__category-item
+                a(href=link.url)= link.name
+    button.btn.btn--on-top
+      i.fa-solid.fa-arrow-up

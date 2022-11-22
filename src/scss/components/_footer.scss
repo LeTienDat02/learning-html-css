@@ -1,55 +1,63 @@
 .footer {
-    &__background {
-        @include background (linear-gradient(208.18deg, $color-background-linear-first 9.05%, $color-background-linear-last 76.74%),none,none);
+  &__background {
+    @include background(
+      linear-gradient(
+        208.18deg,
+        $color-background-linear-first 9.05%,
+        $color-background-linear-last 76.74%
+      ),
+      none,
+      none
+    );
+  }
+  &__content {
+    @include flex-space-between;
+    @include content($max-width, 110px 60px 90px 60px);
+    position: relative;
+  }
+  &__trademark {
+    @include flex-space-between;
+    @include flex-column;
+    max-width: 400px;
+    color: $color-white;
+    height: 200px;
+    &-describing {
+      font-size: 18px;
+      font-family: 'Roboto';
+      margin-top: 20px;
+      line-height: 27px;
     }
-    &__content {
-        @include flex-space-between;
-        @include content($max-width,110px 60px 90px 60px);
-        position: relative;
+    &-bottom {
+      font-weight: 200;
     }
-    &__trademark {
-        @include flex-space-between;
-        @include flex-colums;
-        max-width: 400px;
+  }
+  &__category {
+    @include flex-column;
+    &-title {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: $color-white;
+    }
+    &-items {
+      @include flex-column;
+      @include flex-space-between;
+      flex: 1;
+    }
+    &-item {
+      transition: all 200ms ease-out;
+      a {
+        font-weight: 300;
         color: $color-white;
-        height: 200px; 
-        &-describing {
-            font-size: 18px;
-            font-family: 'Roboto';
-            margin-top: 20px;
-            line-height: 27px;
-        }
-        &-bottom {
-            font-weight: 200;
-        }
+      }
+      &:hover {
+        transform: translateX(10px);
+      }
     }
-    &__category {
-        @include flex-colums;
-        &-title {
-            font-size: 20px;
-            margin-bottom: 30px;
-            color: $color-white;
-        }
-        &-items {
-            @include flex-colums;
-            @include flex-space-between;
-            flex: 1;
-        }
-        &-item {
-            transition: all 200ms ease-out;
-            a {
-                font-weight: 300;
-                color: $color-white;
-            }
-            &:hover {
-                transform: translateX(10px);
-            }
-        }
-    }
-    &__element-top {
-        @include element('tr',0,-70px,-2)
-    }
-    &__element-bottom {
-        @include element('bl',5px,5px,none)
-    }
+  }
+  &__element-top {
+    @include element('tr', 0, -70px, -2);
+  }
+  &__element-bottom {
+    @include element('bl', 5px, 5px, none);
+  }
 }
