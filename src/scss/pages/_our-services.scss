@@ -1,5 +1,7 @@
 .our-services {
-  &__background {
+  position: relative;
+  &::before {
+    content: '';
     @include background(
       none,
       '../assets/images/our-services/backgound-our-services.png',
