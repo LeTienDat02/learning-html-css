@@ -1,0 +1,21 @@
+include ../constants/card-our-services.pug
+section.our-services
+  .container
+    .our-services__content
+      .our-services__top
+        h2.our-services__top-title Services we Offer
+        p.our-services__top-describing Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+      .our-services__list-card
+        each item in items 
+          .our-services__card
+            .our-services__icon
+              img(src=item.img, alt='img')
+            .our-services__describing
+              .our-services__describing-title= item.title
+              .our-services__describing-content= item.content
+        img.our-services__element(
+          src='../assets/images/element/element-1.png',
+          alt='element-1'
+        )
+      .our-services__btn
+        button.btn.btn--primary Learn more

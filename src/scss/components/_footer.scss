@@ -17,7 +17,7 @@
   }
   &__trademark {
     @include flex-space-between;
-    @include flex-colums;
+    @include flex-column;
     max-width: 400px;
     color: $color-white;
     height: 200px;
@@ -32,14 +32,14 @@
     }
   }
   &__category {
-    @include flex-colums;
+    @include flex-column;
     &-title {
       font-size: 20px;
       margin-bottom: 30px;
       color: $color-white;
     }
     &-items {
-      @include flex-colums;
+      @include flex-column;
       @include flex-space-between;
       flex: 1;
     }

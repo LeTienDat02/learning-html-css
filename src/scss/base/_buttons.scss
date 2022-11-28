@@ -12,6 +12,17 @@
     color: rgba(103, 195, 243, 0.65);
     background: none;
   }
+  &--primary {
+    @include btn--theme(
+      200px,
+      60px,
+      55px,
+      solid 2px $color-button,
+      $color-white,
+      18px,
+      $color-button
+    );
+  }
   &--secondary {
     @include btn--theme(
       200px,
