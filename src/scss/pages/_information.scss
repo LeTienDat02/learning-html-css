@@ -10,16 +10,8 @@
   }
   &__content {
     @include content($max-width, 0 120px 0 20px);
-    & > div:nth-child(1) {
-      margin: 100px 0 200px 0;
-    }
-    & > div:nth-child(2) {
-      img {
-        mix-blend-mode: darken;
-      }
-    }
-    & > div:nth-child(3) {
-      margin: 300px 0 135px 0;
+    img[alt='img-mobile-app'] {
+      mix-blend-mode: darken;
     }
   }
   &__category {
