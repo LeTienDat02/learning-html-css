@@ -10,9 +10,6 @@
   }
   &__content {
     @include content($max-width, 0 120px 0 20px);
-    img[alt='img-mobile-app'] {
-      mix-blend-mode: darken;
-    }
   }
   &__category {
     width: 50%;
@@ -41,6 +38,15 @@
         margin-left: 10px;
       }
     }
+  }
+  &__img-mobile-app {
+    mix-blend-mode: darken;
+  }
+  &__first-category {
+    margin: 100px 0 200px 0;
+  }
+  &__last-category {
+    margin: 300px 0 135px 0;
   }
   &-element {
     @include element('tr', 0, 550px, none);
