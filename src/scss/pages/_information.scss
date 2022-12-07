@@ -1,0 +1,54 @@
+.information {
+  position: relative;
+  &::before {
+    content: '';
+    @include background(
+      none,
+      '../assets/images/information/background-information.png',
+      100% 60%
+    );
+  }
+  &__content {
+    @include content($max-width, 0 120px 0 20px);
+  }
+  &__category {
+    width: 50%;
+    padding-left: 130px;
+    &-title {
+      font-size: 36px;
+      color: $color-title-slate-blue;
+      &::after {
+        content: '';
+        width: 56px;
+        height: 2px;
+        display: block;
+        background: $color-black;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+    &-describing {
+      font-size: 18px;
+      color: $color-text-content;
+      margin-bottom: 40px;
+    }
+    &-btn {
+      i {
+        font-size: 15px;
+        margin-left: 10px;
+      }
+    }
+  }
+  &__img-mobile-app {
+    mix-blend-mode: darken;
+  }
+  &__first-category {
+    margin: 100px 0 200px 0;
+  }
+  &__last-category {
+    margin: 300px 0 135px 0;
+  }
+  &-element {
+    @include element('tr', 0, 550px, none);
+  }
+}
