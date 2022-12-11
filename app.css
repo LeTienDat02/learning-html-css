@@ -69,6 +69,7 @@ body ::selection {
   background: #ffffff;
   font-size: 18px;
   color: #458ff6;
+  letter-spacing: 1px;
 }
 .btn--secondary {
   width: 200px;
@@ -78,6 +79,7 @@ body ::selection {
   background: #458ff6;
   font-size: 19px;
   color: #ffffff;
+  letter-spacing: 1px;
 }
 
 .saviour-care-logo {
@@ -136,7 +138,7 @@ body ::selection {
   color: #1f1534;
   font-weight: 700;
   margin: 0 20px;
-  opacity: 0.5;
+  opacity: 0.7;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -227,6 +229,10 @@ body ::selection {
   width: 100%;
   padding: 220px 0 100px 0;
 }
+.introduce__content img {
+  display: block;
+  max-width: 50%;
+}
 .introduce__text-title {
   font-size: 48px;
   color: #3c567b;
@@ -234,7 +240,7 @@ body ::selection {
 }
 .introduce__text-describing {
   font-size: 19px;
-  color: #93c1f9;
+  color: #4a87d1;
   font-weight: 600;
   margin-bottom: 135px;
 }
@@ -244,7 +250,7 @@ body ::selection {
 }
 .our-services::before {
   content: "";
-  background-image: url("./assets/images/our-services/backgound-our-services.png");
+  background-image: url("./assets/images/our-services/backgound-our-services.webp");
   background-repeat: no-repeat;
   background-position: center left;
   position: absolute;
@@ -300,6 +306,9 @@ body ::selection {
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
   z-index: 2;
 }
+.our-services__card img {
+  max-width: 100%;
+}
 .our-services__icon {
   height: 100px;
   margin-bottom: 30px;
@@ -328,7 +337,7 @@ body ::selection {
 }
 .information::before {
   content: "";
-  background-image: url("./assets/images/information/background-information.png");
+  background-image: url("./assets/images/information/background-information.webp");
   background-repeat: no-repeat;
   background-position: 100% 60%;
   position: absolute;
@@ -342,6 +351,9 @@ body ::selection {
   max-width: 1400px;
   width: 100%;
   padding: 0 120px 0 20px;
+}
+.information__content img {
+  max-width: 50%;
 }
 .information__category {
   width: 50%;
@@ -438,7 +450,7 @@ body ::selection {
   margin-left: 50px;
   line-height: 48px;
 }
-.rating__card-person-name h5 {
+.rating__card-person-name h6 {
   font-size: 22px;
 }
 .rating__card-person-name p {
@@ -470,8 +482,8 @@ body ::selection {
 }
 .rating__control-icon {
   color: #458ff6;
-  opacity: 0.3;
-  font-size: 28px;
+  opacity: 0.5;
+  font-size: 40px;
 }
 .rating__control-icon:hover {
   opacity: 1;
@@ -480,10 +492,10 @@ body ::selection {
   display: flex;
 }
 .rating__control-item a {
-  width: 11px;
-  height: 11px;
+  width: 16px;
+  height: 16px;
   background: #458ff6;
-  opacity: 0.3;
+  opacity: 0.5;
   border-radius: 50%;
   margin: 0 20px;
   display: block;
