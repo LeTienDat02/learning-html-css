@@ -77,8 +77,8 @@ body ::selection {
   border-radius: 55px;
   border: none;
   background: #458ff6;
-  font-size: 19px;
-  color: #ffffff;
+  font-size: 20px;
+  color: rgb(238, 231, 231);
   letter-spacing: 1px;
 }
 
@@ -240,8 +240,8 @@ body ::selection {
 }
 .introduce__text-describing {
   font-size: 19px;
-  color: #4a87d1;
-  font-weight: 600;
+  color: #173457;
+  font-weight: 700;
   margin-bottom: 135px;
 }
 
@@ -450,7 +450,7 @@ body ::selection {
   margin-left: 50px;
   line-height: 48px;
 }
-.rating__card-person-name h6 {
+.rating__card-person-name h5 {
   font-size: 22px;
 }
 .rating__card-person-name p {
