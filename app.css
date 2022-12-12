@@ -100,6 +100,10 @@ body ::selection {
 .saviour-care-logo__ellipse--background-white {
   background: #ffffff;
 }
+.saviour-care-logo__ellipse img {
+  max-width: 100%;
+  height: auto;
+}
 .saviour-care-logo__name {
   font-size: 24px;
   text-transform: capitalize;
@@ -231,6 +235,7 @@ body ::selection {
 }
 .introduce__content img {
   display: block;
+  height: auto;
   max-width: 50%;
 }
 .introduce__text-title {
@@ -353,7 +358,8 @@ body ::selection {
   padding: 0 120px 0 20px;
 }
 .information__content img {
-  max-width: 50%;
+  height: auto;
+  width: 50%;
 }
 .information__category {
   width: 50%;
