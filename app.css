@@ -65,10 +65,10 @@ body ::selection {
   width: 200px;
   height: 60px;
   border-radius: 55px;
-  border: solid 2px #458ff6;
+  border: solid 2px #5279a9;
   background: #ffffff;
   font-size: 18px;
-  color: #458ff6;
+  color: #5279a9;
   letter-spacing: 1px;
 }
 .btn--secondary {
@@ -76,9 +76,9 @@ body ::selection {
   height: 70px;
   border-radius: 55px;
   border: none;
-  background: #458ff6;
+  background: #5279a9;
   font-size: 20px;
-  color: rgb(238, 231, 231);
+  color: #ffffff;
   letter-spacing: 1px;
 }
 
@@ -450,7 +450,7 @@ body ::selection {
   margin-left: 50px;
   line-height: 48px;
 }
-.rating__card-person-name h5 {
+.rating__card-person-name h4 {
   font-size: 22px;
 }
 .rating__card-person-name p {
