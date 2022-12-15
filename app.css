@@ -50,6 +50,7 @@ body ::selection {
   font-weight: 600;
   border: none;
   cursor: pointer;
+  letter-spacing: 1px;
 }
 .btn--on-top {
   cursor: pointer;
@@ -69,7 +70,6 @@ body ::selection {
   background: #ffffff;
   font-size: 18px;
   color: #5279a9;
-  letter-spacing: 1px;
 }
 .btn--secondary {
   width: 200px;
@@ -77,9 +77,8 @@ body ::selection {
   border-radius: 55px;
   border: none;
   background: #5279a9;
-  font-size: 20px;
+  font-size: 19px;
   color: #ffffff;
-  letter-spacing: 1px;
 }
 
 .saviour-care-logo {
@@ -90,9 +89,9 @@ body ::selection {
   width: 41px;
   height: 41px;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
-  position: relative;
   border-radius: 50%;
 }
 .saviour-care-logo__ellipse--background-primary {
@@ -236,18 +235,6 @@ body ::selection {
   width: 100%;
   padding: 220px 0 100px 0;
 }
-.introduce__img {
-  width: 50%;
-  padding-top: 35%;
-  position: relative;
-}
-.introduce__img img {
-  max-width: 100%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
 .introduce__text {
   width: 50%;
 }
@@ -262,13 +249,25 @@ body ::selection {
   font-weight: 700;
   margin-bottom: 135px;
 }
+.introduce__img {
+  width: 50%;
+  padding-top: 35%;
+  position: relative;
+}
+.introduce__img img {
+  max-width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .our-services {
   position: relative;
 }
 .our-services::before {
   content: "";
-  background-image: url("./assets/images/our-services/backgound-our-services.webp");
+  background-image: url("../assets/images/our-services/backgound-our-services.png");
   background-repeat: no-repeat;
   background-position: center left;
   position: absolute;
@@ -324,6 +323,10 @@ body ::selection {
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
   z-index: 2;
 }
+.our-services__icon {
+  height: 100px;
+  margin-bottom: 30px;
+}
 .our-services__img-icon {
   position: relative;
   width: 100px;
@@ -336,10 +339,6 @@ body ::selection {
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
-}
-.our-services__icon {
-  height: 100px;
-  margin-bottom: 30px;
 }
 .our-services__describing-title {
   font-size: 24px;
@@ -365,7 +364,7 @@ body ::selection {
 }
 .information::before {
   content: "";
-  background-image: url("./assets/images/information/background-information.webp");
+  background-image: url("../assets/images/information/background-information.png");
   background-repeat: no-repeat;
   background-position: 100% 60%;
   position: absolute;
@@ -531,8 +530,8 @@ body ::selection {
 }
 .rating__control-icon {
   color: #458ff6;
-  opacity: 0.5;
-  font-size: 40px;
+  opacity: 0.3;
+  font-size: 28px;
 }
 .rating__control-icon:hover {
   opacity: 1;
@@ -541,10 +540,10 @@ body ::selection {
   display: flex;
 }
 .rating__control-item a {
-  width: 16px;
-  height: 16px;
+  width: 11px;
+  height: 11px;
   background: #458ff6;
-  opacity: 0.5;
+  opacity: 0.3;
   border-radius: 50%;
   margin: 0 20px;
   display: block;
