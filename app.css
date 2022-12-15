@@ -267,7 +267,7 @@ body ::selection {
 }
 .our-services::before {
   content: "";
-  background-image: url("../assets/images/our-services/backgound-our-services.png");
+  background-image: url("./assets/images/our-services/backgound-our-services.webp");
   background-repeat: no-repeat;
   background-position: center left;
   position: absolute;
@@ -364,7 +364,7 @@ body ::selection {
 }
 .information::before {
   content: "";
-  background-image: url("../assets/images/information/background-information.png");
+  background-image: url("./assets/images/information/background-information.webp");
   background-repeat: no-repeat;
   background-position: 100% 60%;
   position: absolute;
