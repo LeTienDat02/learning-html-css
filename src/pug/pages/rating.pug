@@ -3,36 +3,37 @@ section.rating
     .rating__content
       .rating__card
         img.rating__element-top(
-          src='../assets/images/element/element-1.png',
+          src='./assets/images/element/element-1.webp',
           alt='element-1'
         )
         h3.rating__card-title What our customers are saying
         .rating__card-content
           .rating__card-person
-            img(
-              src='../assets/icons/rating/person-icon.png',
-              alt='img-person-rating'
-            )
+            .rating__card-person-img
+              img(
+                src='./assets/icons/rating/person-icon.webp',
+                alt='img-person-rating'
+              )
             .rating__card-person-name
-              h5 Ak
+              h4 Ak
               p Abc ltd
           .rating__card-describing
             | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
       img.rating__element-bottom(
-        src='../assets/images/element/element-1.png',
+        src='./assets/images/element/element-1.webp',
         alt='element-1'
       )
       .rating__control
-        a.rating__control-directional(href='#')
+        a.rating__control-directional(href='#' aria-label="Previous")
           i.rating__control-icon.fa-solid.fa-left-long
         ul.rating__control-list
           li.rating__control-item
-            a#element-focus(href='#')
+            a#element-focus(href='#' aria-label="Page 1")
           li.rating__control-item
-            a(href='#')
+            a(href='#' aria-label="Page 2")
           li.rating__control-item
-            a(href='#')
+            a(href='#' aria-label="Page 3")
           li.rating__control-item
-            a(href='#')
-        a.rating__control-link(href='#')
+            a(href='#' aria-label="Page 4")
+        a.rating__control-link(href='#' aria-label="Next")
           i.rating__control-icon.fa-solid.fa-right-long
