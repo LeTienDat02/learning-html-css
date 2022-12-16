@@ -4,12 +4,24 @@
     content: '';
     @include background(
       none,
-      '../assets/images/information/background-information.png',
+      './assets/images/information/background-information.webp',
       100% 60%
     );
   }
   &__content {
     @include content($max-width, 0 120px 0 20px);
+  }
+  &__img {
+    width: 50%;
+    position: relative;
+    padding-top: 40%;
+    img {
+      max-width: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   &__category {
     width: 50%;

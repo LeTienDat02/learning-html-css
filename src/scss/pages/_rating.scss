@@ -45,10 +45,22 @@
       color: $color-white;
       text-align: left;
     }
+    &-person-img {
+      width: 115px;
+      height: 115px;
+      position: relative;
+      img {
+        max-width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
     &-person-name {
       margin-left: 50px;
       line-height: 48px;
-      h5 {
+      h4 {
         font-size: 22px;
       }
       p {
