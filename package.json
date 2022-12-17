@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass ./src/scss/app.scss ./build/app.css  --watch",
-    "pug": "pug ./src/pug/index.pug -o ./build --watch --pretty"
+    "pug": "pug ./src/pug/index.pug -o ./build --watch --pretty",
+    "build": "concurrently \"sass ./src/scss/app.scss ./build/app.css\" \"pug ./src/pug/index.pug -o ./build\" \"cpx ./assets/** ./build/assets\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -17,8 +20,11 @@
   "bugs": {
     "url": "https://github.com/LeTienDat02/learning-html-css/issues"
   },
-  "homepage": "https://github.com/LeTienDat02/learning-html-css#readme",
+  "homepage": "https://letiendat02.github.io/learning-html-css/",
   "dependencies": {
+    "concurrently": "^7.6.0",
+    "cpx": "^1.5.0",
+    "gh-pages": "^4.0.0"
   },
   "devDependencies": {
     "pug-cli": "^1.0.0-alpha6",

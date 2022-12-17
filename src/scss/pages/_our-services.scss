@@ -4,7 +4,7 @@
     content: '';
     @include background(
       none,
-      '../assets/images/our-services/backgound-our-services.png',
+      './assets/images/our-services/backgound-our-services.webp',
       center left
     );
   }
@@ -54,6 +54,19 @@
   &__icon {
     height: 100px;
     margin-bottom: 30px;
+  }
+  &__img-icon {
+    position: relative;
+    width: 100px;
+    margin: auto;
+    padding-top: 100px;
+    img {
+      max-width: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
   }
   &__describing {
     &-title {
