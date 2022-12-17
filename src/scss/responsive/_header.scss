@@ -1,0 +1,57 @@
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    &__content {
+      padding: 0 40px 0 40px;
+    }
+    &__nav {
+      margin-right: -10px;
+      &-item {
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    height: 60px;
+    background-color: $color-background-header-mobile;
+    &__content {
+      padding: 0 20px 0 20px;
+    }
+    &__nav {
+      position: absolute;
+      top: 60px;
+      right: -70%;
+      width: 70%;
+      height: 100vh;
+      margin: 0;
+      background-color: $color-background-nav-mobile;
+      transition: all 1s ease-in-out;
+      &-list-items {
+        margin-top: 20px;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+    &__nav-show {
+      right: 0;
+    }
+    &__menu {
+      display: block;
+      button {
+        width: 30px;
+        height: 30px;
+        background: none;
+        outline: none;
+        border: none;
+      }
+      i {
+        font-size: 30px;
+        color: $color-white;
+      }
+    }
+  }
+}

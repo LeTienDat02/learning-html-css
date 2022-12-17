@@ -1,0 +1,11 @@
+@media only screen and (max-width: 767px) {
+  .saviour-care-logo {
+    &__ellipse {
+      width: 31px;
+      height: 31px;
+    }
+    &__name {
+      display: none;
+    }
+  }
+}
