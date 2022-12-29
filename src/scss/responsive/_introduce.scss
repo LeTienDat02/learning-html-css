@@ -1,0 +1,36 @@
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .introduce {
+    &__content {
+      padding: 110px 20px 50px 20px;
+    }
+    &__text-title {
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
+    &__text-describing {
+      margin-bottom: 80px;
+      font-size: 0.8em;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .introduce {
+    &__content {
+      padding: 110px 20px 50px 20px;
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 40px;
+    }
+    &__text {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      text-align: center;
+    }
+    &__text-title {
+      margin-bottom: 20px;
+    }
+    &__text-describing {
+      margin-bottom: 50px;
+    }
+  }
+}
