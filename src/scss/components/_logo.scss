@@ -16,6 +16,7 @@
       background: $color-white;
     }
     img {
+      max-width: 70%;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -23,7 +24,7 @@
     }
   }
   &__name {
-    font-size: 24px;
+    font-size: 1.2em;
     text-transform: capitalize;
     margin-left: 10px;
     &--header-theme {
