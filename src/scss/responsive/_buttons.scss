@@ -1,0 +1,19 @@
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .btn {
+    &--secondary {
+      max-height: 60px;
+      width: 50%;
+      font-size: 0.9em;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .btn {
+    &--secondary {
+      max-height: 60px;
+      width: 100%;
+      font-size: 0.9em;
+    }
+  }
+}
