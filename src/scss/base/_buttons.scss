@@ -9,7 +9,7 @@
     position: fixed;
     bottom: 500px;
     right: 150px;
-    font-size: 40px;
+    font-size: 2em;
     color: rgba(103, 195, 243, 0.65);
     background: none;
   }
@@ -20,7 +20,7 @@
       55px,
       solid 2px $color-button,
       $color-white,
-      18px,
+      0.9em,
       $color-button
     );
   }
@@ -31,7 +31,7 @@
       55px,
       none,
       $color-button,
-      19px,
+      0.95em,
       $color-white
     );
   }

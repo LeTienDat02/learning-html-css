@@ -1,0 +1,26 @@
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .our-services {
+    &__content {
+      padding: 60px 80px;
+    }
+    &__top {
+      &-title {
+        font-size: 1.8em;
+      }
+      &-describing {
+        font-size: 0.8em;
+      }
+    }
+    &__list-card {
+      font-size: 0.8em;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .our-services {
+    &__content {
+      padding: 60px 20px;
+    }
+  }
+}
