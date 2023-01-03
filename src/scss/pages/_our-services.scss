@@ -17,7 +17,7 @@
     padding: 0 55px;
     margin: auto;
     &-title {
-      font-size: 45px;
+      font-size: 2.45em;
       color: $color-title-slate-blue;
       &::after {
         content: '';
@@ -31,7 +31,7 @@
       }
     }
     &-describing {
-      font-size: 19px;
+      font-size: 0.95em;
       color: #ccd2e9;
       font-weight: 600;
     }
@@ -40,7 +40,7 @@
     @include flex-center-x;
     display: grid;
     position: relative;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-gap: 34px;
     margin-top: 86px;
   }
@@ -70,7 +70,7 @@
   }
   &__describing {
     &-title {
-      font-size: 24px;
+      font-size: 1em;
       color: $color-black;
       margin-bottom: 20px;
       font-weight: 700;
