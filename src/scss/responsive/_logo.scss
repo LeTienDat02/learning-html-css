@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: $mobileMax) {
   .saviour-care-logo {
     &__ellipse {
       width: 31px;

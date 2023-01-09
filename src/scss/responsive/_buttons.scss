@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
   .btn {
     &--secondary {
       max-height: 60px;
@@ -11,7 +11,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: $mobileMax) {
   .btn {
     &--secondary {
       max-height: 60px;
