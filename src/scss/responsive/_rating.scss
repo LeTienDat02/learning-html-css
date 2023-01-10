@@ -1,0 +1,78 @@
+@media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+  .rating {
+    &__content {
+      padding: 100px 40px 110px 40px;
+    }
+    &__card {
+      padding: 50px 100px;
+      &-content {
+        margin-top: 60px;
+      }
+      &-describing {
+        font-size: 0.9em;
+      }
+      &-person {
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      &-person-img {
+        width: 100px;
+        height: 100px;
+      }
+      &-describing {
+        text-align: center;
+        padding: 0;
+        line-height: 2;
+      }
+    }
+    &__control {
+      margin-top: 40px;
+      &-directional {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobileMax) {
+  .rating {
+    &__content {
+      padding: 50px 20px 50px 20px;
+    }
+    &__card {
+      padding: 30px 30px;
+      &-content {
+        margin-top: 40px;
+        grid-template-columns: 1fr;
+      }
+      &-title {
+        font-size: 1.4em;
+      }
+      &-describing {
+        font-size: 0.9em;
+      }
+      &-person {
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      &-person-name {
+        margin-left: 25px;
+      }
+      &-person-img {
+        width: 80px;
+        height: 80px;
+      }
+      &-describing {
+        text-align: center;
+        padding: 0;
+        line-height: 1.5;
+      }
+    }
+    &__control {
+      margin-top: 20px;
+      &-directional {
+        display: none;
+      }
+    }
+  }
+}

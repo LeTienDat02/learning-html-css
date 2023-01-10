@@ -22,7 +22,7 @@
       $color-background-linear-last 76.74%
     );
     &-title {
-      font-size: 36px;
+      font-size: 1.8em;
       color: $color-white;
       &::after {
         content: '';
@@ -35,13 +35,13 @@
       }
     }
     &-content {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       margin-top: 100px;
     }
     &-person {
       @include flex-center-y;
-      flex-basis: 50%;
-      font-size: 18px;
+      font-size: 0.9em;
       color: $color-white;
       text-align: left;
     }
@@ -61,17 +61,16 @@
       margin-left: 50px;
       line-height: 48px;
       h4 {
-        font-size: 22px;
+        font-size: 1.1em;
       }
       p {
-        font-size: 18px;
+        font-size: 0.9em;
         font-weight: 400;
       }
     }
     &-describing {
-      flex-basis: 50%;
-      font-size: 22px;
-      line-height: 55px;
+      font-size: 1.1em;
+      line-height: 2.5;
       font-weight: 500;
       font-family: 'Roboto';
       text-align: left;
