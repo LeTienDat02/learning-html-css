@@ -1,78 +1,166 @@
-@media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
-  .rating {
-    &__content {
+.rating {
+  &__content {
+    @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
       padding: 100px 40px 110px 40px;
     }
-    &__card {
+    @media only screen and (max-width: $mobileMax) {
+      padding: 50px 20px 50px 20px;
+    }
+  }
+  &__card {
+    @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
       padding: 50px 100px;
-      &-content {
+    }
+    @media only screen and (max-width: $mobileMax) {
+      padding: 30px 30px;
+    }
+    &-content {
+      @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
         margin-top: 60px;
       }
-      &-describing {
+      @media only screen and (max-width: $mobileMax) {
+        margin-top: 40px;
+        grid-template-columns: 1fr;
+      }
+    }
+    &-title {
+      @media only screen and (max-width: $mobileMax) {
+        font-size: 1.4em;
+      }
+    }
+    &-describing {
+      @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
         font-size: 0.9em;
       }
-      &-person {
+      @media only screen and (max-width: $mobileMax) {
+        font-size: 0.9em;
+      }
+    }
+    &-person {
+      @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
         justify-content: center;
         margin-bottom: 20px;
       }
-      &-person-img {
+      @media only screen and (max-width: $mobileMax) {
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+    }
+    &-person-img {
+      @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
         width: 100px;
         height: 100px;
       }
-      &-describing {
+      @media only screen and (max-width: $mobileMax) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    &-describing {
+      @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
         text-align: center;
         padding: 0;
         line-height: 2;
       }
-    }
-    &__control {
-      margin-top: 40px;
-      &-directional {
-        display: none;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: $mobileMax) {
-  .rating {
-    &__content {
-      padding: 50px 20px 50px 20px;
-    }
-    &__card {
-      padding: 30px 30px;
-      &-content {
-        margin-top: 40px;
-        grid-template-columns: 1fr;
-      }
-      &-title {
-        font-size: 1.4em;
-      }
-      &-describing {
-        font-size: 0.9em;
-      }
-      &-person {
-        justify-content: center;
-        margin-bottom: 20px;
-      }
-      &-person-name {
-        margin-left: 25px;
-      }
-      &-person-img {
-        width: 80px;
-        height: 80px;
-      }
-      &-describing {
+      @media only screen and (max-width: $mobileMax) {
         text-align: center;
         padding: 0;
         line-height: 1.5;
       }
     }
-    &__control {
+  }
+  &__control {
+    @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+      margin-top: 40px;
+    }
+    @media only screen and (max-width: $mobileMax) {
       margin-top: 20px;
-      &-directional {
+    }
+    &-directional {
+      @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+        display: none;
+      }
+      @media only screen and (max-width: $mobileMax) {
         display: none;
       }
     }
   }
 }
+// @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+//   .rating {
+//     &__content {
+//       padding: 100px 40px 110px 40px;
+//     }
+//     &__card {
+//       padding: 50px 100px;
+//       &-content {
+//         margin-top: 60px;
+//       }
+//       &-describing {
+//         font-size: 0.9em;
+//       }
+//       &-person {
+//         justify-content: center;
+//         margin-bottom: 20px;
+//       }
+//       &-person-img {
+//         width: 100px;
+//         height: 100px;
+//       }
+//       &-describing {
+//         text-align: center;
+//         padding: 0;
+//         line-height: 2;
+//       }
+//     }
+//     &__control {
+//       margin-top: 40px;
+//       &-directional {
+//         display: none;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (max-width: $mobileMax) {
+//   .rating {
+//     &__content {
+//       padding: 50px 20px 50px 20px;
+//     }
+//     &__card {
+//       padding: 30px 30px;
+//       &-content {
+//         margin-top: 40px;
+//         grid-template-columns: 1fr;
+//       }
+//       &-title {
+//         font-size: 1.4em;
+//       }
+//       &-describing {
+//         font-size: 0.9em;
+//       }
+//       &-person {
+//         justify-content: center;
+//         margin-bottom: 20px;
+//       }
+//       &-person-name {
+//         margin-left: 25px;
+//       }
+//       &-person-img {
+//         width: 80px;
+//         height: 80px;
+//       }
+//       &-describing {
+//         text-align: center;
+//         padding: 0;
+//         line-height: 1.5;
+//       }
+//     }
+//     &__control {
+//       margin-top: 20px;
+//       &-directional {
+//         display: none;
+//       }
+//     }
+//   }
+// }
