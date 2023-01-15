@@ -1,0 +1,54 @@
+.footer {
+  &__content {
+    @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+      padding-left: 40px;
+      padding-bottom: 40px;
+    }
+    @media only screen and (max-width: $mobileMax) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__trademark {
+    @media only screen and (max-width: $mobileMax) {
+      margin-bottom: 30px;
+      justify-content: flex-start;
+      height: auto;
+      max-width: 100%;
+    }
+    &-describing {
+      @media only screen and (max-width: $mobileMax) {
+        margin-left: 20px;
+      }
+    }
+    &-bottom {
+      @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+        font-size: 0.8em;
+      }
+      @media only screen and (max-width: $mobileMax) {
+        font-size: 0.9em;
+        text-align: center;
+      }
+    }
+    &-top {
+      @media only screen and (max-width: $mobileMax) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding: 0 40px;
+      }
+    }
+  }
+  &__category {
+    &-item {
+      a {
+        @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+          font-size: 0.8em;
+        }
+        @media only screen and (max-width: $mobileMax) {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}

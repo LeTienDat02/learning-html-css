@@ -21,12 +21,13 @@ footer.footer
           p.footer__trademark-describing
             | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
         p.footer__trademark-bottom AK PVT LTD 2021. All rights reserved
-      each item in items
-        .footer__category
-          h5.footer__category-title= item.title
-          ul.footer__category-items
-            each link in item.items 
-              li.footer__category-item
-                a(href=link.url)= link.name
+      .footer__links
+        each item in items
+          .footer__category
+            h5.footer__category-title= item.title
+            ul.footer__category-items
+              each link in item.items 
+                li.footer__category-item
+                  a(href=link.url)= link.name
     button.btn.btn--on-top(aria-label="On top")
       i.fa-solid.fa-arrow-up
