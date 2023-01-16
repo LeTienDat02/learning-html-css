@@ -1,10 +1,12 @@
-@media only screen and (max-width: $mobileMax) {
-  .saviour-care-logo {
-    &__ellipse {
+.saviour-care-logo {
+  &__ellipse {
+    @media only screen and (max-width: $mobileMax) {
       width: 31px;
       height: 31px;
     }
-    &__name {
+  }
+  &__name {
+    @media only screen and (max-width: $mobileMax) {
       display: none;
     }
   }

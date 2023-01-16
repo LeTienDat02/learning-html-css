@@ -1,25 +1,24 @@
-@media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
-  .header {
-    &__content {
-      padding: 0 40px 0 40px;
+.header {
+  @media only screen and (max-width: $mobileMax) {
+    height: 60px;
+    background-color: $color-background-header-mobile;
+  }
+  &__content {
+    @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+      padding: 0 40px;
     }
-    &__nav {
+    @media only screen and (max-width: $mobileMax) {
+      padding: 0 20px;
+    }
+  }
+  &__nav {
+    @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
       margin-right: -10px;
       &-item {
         margin: 0 10px;
       }
     }
-  }
-}
-
-@media only screen and (max-width: $mobileMax) {
-  .header {
-    height: 60px;
-    background-color: $color-background-header-mobile;
-    &__content {
-      padding: 0 20px 0 20px;
-    }
-    &__nav {
+    @media only screen and (max-width: $mobileMax) {
       position: absolute;
       top: 60px;
       right: -70%;
@@ -36,10 +35,14 @@
         justify-content: space-between;
       }
     }
-    &__nav-show {
+  }
+  &__nav-show {
+    @media only screen and (max-width: $mobileMax) {
       right: 0;
     }
-    &__menu {
+  }
+  &__menu {
+    @media only screen and (max-width: $mobileMax) {
       display: block;
       button {
         width: 30px;

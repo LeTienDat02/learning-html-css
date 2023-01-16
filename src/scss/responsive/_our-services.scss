@@ -1,26 +1,27 @@
-@media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
-  .our-services {
-    &__content {
+.our-services {
+  &__content {
+    @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
       padding: 60px 80px;
     }
-    &__top {
-      &-title {
+    @media only screen and (max-width: $mobileMax) {
+      padding: 60px 20px;
+    }
+  }
+  &__top {
+    &-title {
+      @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
         font-size: 1.8em;
       }
-      &-describing {
+    }
+    &-describing {
+      @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
         font-size: 0.8em;
       }
     }
-    &__list-card {
-      font-size: 0.8em;
-    }
   }
-}
-
-@media only screen and (max-width: $mobileMax) {
-  .our-services {
-    &__content {
-      padding: 60px 20px;
+  &__list-card {
+    @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+      font-size: 0.8em;
     }
   }
 }
