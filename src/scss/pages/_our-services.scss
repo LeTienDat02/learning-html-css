@@ -9,7 +9,7 @@
     );
   }
   &__content {
-    @include content($max-width, 100px 140px);
+    @include content(100px 140px);
     text-align: center;
   }
   &__top {
