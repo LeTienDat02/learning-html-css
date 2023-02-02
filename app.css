@@ -21,7 +21,8 @@ a {
   display: flex;
   justify-content: center;
   position: relative;
-  width: 100%;
+  max-width: 1400px;
+  margin: auto;
   height: 100%;
 }
 
@@ -56,8 +57,8 @@ body ::selection {
   cursor: pointer;
   border: none;
   position: fixed;
-  bottom: 500px;
-  right: 150px;
+  bottom: 10%;
+  right: 5%;
   font-size: 2em;
   color: rgba(103, 195, 243, 0.65);
   background: none;
@@ -130,7 +131,6 @@ body ::selection {
   background: #ffffff;
 }
 .header__content {
-  max-width: 1400px;
   width: 100%;
   padding: 0 85px 0 85px;
 }
@@ -160,19 +160,11 @@ body ::selection {
   display: none;
 }
 
-.footer__background {
-  background: linear-gradient(208.18deg, #6888c8 9.05%, #5a98f2 76.74%);
-  background-repeat: no-repeat;
-  background-position: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
+.footer {
+  background-image: linear-gradient(208.18deg, #6888c8 9.05%, #5a98f2 76.74%);
+  position: relative;
 }
 .footer__content {
-  max-width: 1400px;
   width: 100%;
   padding: 110px 60px 90px 60px;
   position: relative;
@@ -242,7 +234,6 @@ body ::selection {
 }
 
 .introduce__content {
-  max-width: 1400px;
   width: 100%;
   padding: 220px 20px 100px 20px;
   display: grid;
@@ -289,7 +280,6 @@ body ::selection {
   z-index: -1;
 }
 .our-services__content {
-  max-width: 1400px;
   width: 100%;
   padding: 100px 140px;
   text-align: center;
@@ -386,13 +376,12 @@ body ::selection {
   z-index: -1;
 }
 .information__content {
-  max-width: 1400px;
   width: 100%;
   padding: 0 120px 0 20px;
 }
 .information__img {
   position: relative;
-  padding-top: 40%;
+  padding-top: 60%;
 }
 .information__img img {
   max-width: 100%;
@@ -448,7 +437,6 @@ body ::selection {
 }
 
 .rating__content {
-  max-width: 1400px;
   width: 100%;
   padding: 135px 60px 150px 60px;
   position: relative;
@@ -574,6 +562,17 @@ body ::selection {
   opacity: 1;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: calc(100% - 60px);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .saviour-care-logo__ellipse {
     width: 31px;
@@ -627,7 +626,7 @@ body ::selection {
 }
 @media only screen and (max-width: 767px) {
   .header__content {
-    padding: 0 20px;
+    padding: 0 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -645,7 +644,6 @@ body ::selection {
     right: -70%;
     width: 70%;
     height: 100vh;
-    margin: 0;
     background-color: #bed7f0;
     transition: all 1s ease-in-out;
   }
@@ -659,7 +657,7 @@ body ::selection {
 }
 @media only screen and (max-width: 767px) {
   .header__nav-show {
-    right: 0;
+    right: 0px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -686,7 +684,7 @@ body ::selection {
 }
 @media only screen and (max-width: 767px) {
   .introduce__content {
-    padding: 110px 20px 50px 20px;
+    padding: 110px 0 50px 0;
     grid-template-rows: repeat(2, 1fr);
     row-gap: 40px;
   }
@@ -728,7 +726,7 @@ body ::selection {
 }
 @media only screen and (max-width: 767px) {
   .our-services__content {
-    padding: 60px 20px;
+    padding: 60px 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -754,7 +752,7 @@ body ::selection {
 }
 @media only screen and (max-width: 767px) {
   .information__content {
-    padding: 0 20px;
+    padding: 0 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -835,7 +833,7 @@ body ::selection {
 }
 @media only screen and (max-width: 767px) {
   .rating__content {
-    padding: 50px 20px 50px 20px;
+    padding: 50px 0 50px 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -942,7 +940,7 @@ body ::selection {
 @media only screen and (max-width: 767px) {
   .footer__content {
     grid-template-columns: 1fr;
-    padding: 40px 20px;
+    padding: 40px 0px;
   }
 }
 @media only screen and (max-width: 767px) {
