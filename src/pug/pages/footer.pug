@@ -1,20 +1,20 @@
 include ../constants/footer-category.pug
 footer.footer
-  img.footer__element-bottom(
-    src='./assets/images/element/element-3.webp',
-    alt='element-3'
-  )
+  picture.footer__element-bottom
+    source(srcset="./assets/images/element/element-3.webp" type="image/webp")
+    img(src="./assets/images/element/element-3.png" alt="element-3")
   .container
     .footer__content
-      img.footer__element-top(
-        src='./assets/images/element/element-1.webp',
-        alt='element-1'
-      )
+      picture.footer__element-top
+        source(srcset="./assets/images/element/element-1.webp" type="image/webp")
+        img(src="./assets/images/element/element-1.png" alt="element-1")
       .footer__trademark
         .footer__trademark-top
           a.saviour-care-logo(href='/')
             .saviour-care-logo__ellipse.saviour-care-logo__ellipse--background-white
-              img(src='./assets/icons/logo/logo-shapes.webp', alt='LOGO')
+              picture
+                source(srcset="./assets/icons/logo/logo-shapes.webp" type="image/webp")
+                img(src="./assets/icons/logo/logo-shapes.png" alt="Logo")
             h5.saviour-care-logo__name.saviour-care-logo__name--footer-theme
               | saviour care
           p.footer__trademark-describing

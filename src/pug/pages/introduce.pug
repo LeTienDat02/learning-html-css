@@ -6,4 +6,6 @@ section.introduce
         p.introduce__text-describing Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
         button.btn.btn--secondary Consult today
       .introduce__img
-        img(src='./assets/images/introduce/doctor-img.webp', alt='doctor')
+        picture
+          source(srcset="./assets/images/introduce/doctor-img.webp" type="image/webp")
+          img(src="./assets/images/introduce/doctor-img.png" alt="doctor")

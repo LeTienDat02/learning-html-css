@@ -2,27 +2,24 @@ section.rating
   .container
     .rating__content
       .rating__card
-        img.rating__element-top(
-          src='./assets/images/element/element-1.webp',
-          alt='element-1'
-        )
+        picture.rating__element-top
+          source(srcset="./assets/images/element/element-1.webp" type="image/webp")
+          img(src="./assets/images/element/element-1.png" alt="element-1")
         h3.rating__card-title What our customers are saying
         .rating__card-content
           .rating__card-person
             .rating__card-person-img
-              img(
-                src='./assets/icons/rating/person-icon.webp',
-                alt='img-person-rating'
-              )
+              picture
+                source(srcset="./assets/icons/rating/person-icon.webp" type="image/webp")
+                img(src="./assets/icons/rating/person-icon.png" alt="img-person-rating")
             .rating__card-person-name
               h4 Ak
               p Abc ltd
           .rating__card-describing
             | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      img.rating__element-bottom(
-        src='./assets/images/element/element-1.webp',
-        alt='element-1'
-      )
+      picture.rating__element-bottom
+        source(srcset="./assets/images/element/element-1.webp" type="image/webp")
+        img(src="./assets/images/element/element-1.png" alt="element-1")
       .rating__control
         a.rating__control-directional(href='#' aria-label="Previous")
           i.rating__control-icon.fa-solid.fa-left-long
