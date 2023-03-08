@@ -6,7 +6,7 @@ header.header
       .inner
         a.saviour-care-logo(href='#')
           .saviour-care-logo__ellipse.saviour-care-logo__ellipse--background-primary
-            img(src='./assets/icons/logo/logo-shapes.webp', alt='LOGO')
+            img(src="./assets/icons/logo/logo-shapes.svg" alt="Logo")
           h5.saviour-care-logo__name.saviour-care-logo__name--header-theme saviour care
         nav.header__nav <!--.header__nav-show-->
           ul.header__nav-list-items
@@ -14,5 +14,5 @@ header.header
               li
                 a.header__nav-item(href=item.url)= item.name
         .header__menu
-          button
+          button(id='menu' aria-label='Header Menu')
             i.fa-solid.fa-bars

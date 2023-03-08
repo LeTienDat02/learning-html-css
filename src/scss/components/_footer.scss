@@ -1,17 +1,12 @@
 .footer {
-  &__background {
-    @include background(
-      linear-gradient(
-        208.18deg,
-        $color-background-linear-first 9.05%,
-        $color-background-linear-last 76.74%
-      ),
-      none,
-      none
-    );
-  }
+  background-image: linear-gradient(
+    208.18deg,
+    $color-background-linear-first 9.05%,
+    $color-background-linear-last 76.74%
+  );
+  position: relative;
   &__content {
-    @include content($max-width, 110px 60px 90px 60px);
+    @include content(110px 60px 90px 60px);
     position: relative;
     display: grid;
     grid-template-columns: 2fr 3fr;

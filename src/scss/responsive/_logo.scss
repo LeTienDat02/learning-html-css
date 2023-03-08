@@ -3,6 +3,9 @@
     @media only screen and (max-width: $mobileMax) {
       width: 31px;
       height: 31px;
+      img {
+        max-width: 80%;
+      }
     }
   }
   &__name {

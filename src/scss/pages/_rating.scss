@@ -1,6 +1,6 @@
 .rating {
   &__content {
-    @include content($max-width, 135px 60px 150px 60px);
+    @include content(135px 60px 150px 60px);
     position: relative;
   }
   &__element-top {

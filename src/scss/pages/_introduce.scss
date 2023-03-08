@@ -1,6 +1,6 @@
 .introduce {
   &__content {
-    @include content($max-width, 220px 20px 100px 20px);
+    @include content(220px 20px 100px 20px);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
     column-gap: 20px;

@@ -10,13 +10,12 @@ section.our-services
           .our-services__card
             .our-services__icon
               .our-services__img-icon
-                img(src=item.img, alt='img')
+                img(src= item.img alt= item.title)
             .our-services__describing
               .our-services__describing-title= item.title
               .our-services__describing-content= item.content
-        img.our-services__element(
-          src='./assets/images/element/element-1.webp',
-          alt='element-1'
-        )
+        picture.our-services__element
+          source(srcset="./assets/images/element/element-1.webp" type="image/webp")
+          img(src="./assets/images/element/element-1.png" alt="element-1")
       .our-services__btn
         button.btn.btn--primary Learn more

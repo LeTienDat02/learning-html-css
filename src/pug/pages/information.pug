@@ -3,10 +3,9 @@ section.information
     .information__content
       .information__item.information__first-category
         .information__img
-          img(
-            src='./assets/images/information/leading-healthcare.webp',
-            alt='img-leading-healthcare'
-          )
+          picture
+            source(srcset="./assets/images/information/leading-healthcare.webp" type="image/webp")
+            img(src="./assets/images/information/leading-healthcare.png" alt="img-leading-healthcare")
         .information__category
           h3.information__category-title Leading healthcare providers
           p.information__category-describing Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver
@@ -20,22 +19,19 @@ section.information
             button.btn.btn--primary Download
               i.download-icon.fa-solid.fa-down-long
         .information__img
-          img.information__img-mobile-app(
-            src='./assets/images/information/mobile-app.webp',
-            alt='img-mobile-app'
-          )
+          picture.information__img-mobile-app
+            source(srcset="./assets/images/information/mobile-app.webp" type="image/webp")
+            img(src="./assets/images/information/mobile-app.png" alt="img-mobile-app")
       .information__item.information__last-category
         .information__img
-          img(
-            src='./assets/images/information/find-a-doctor.webp',
-            alt='img-find-a-doctor'
-          )
+          picture
+            source(srcset="./assets/images/information/find-a-doctor.webp" type="image/webp")
+            img(src="./assets/images/information/find-a-doctor.png" alt="img-find-a-doctor")
         .information__category
           h3.information__category-title Find a Doctor near you
           p.information__category-describing Our app and web portal allows you to find the doctor to your nearest location.
           .information__category-btn
             button.btn.btn--primary Find now
-    img.information-element(
-      src='./assets/images/element/element-2.webp',
-      alt='element-2'
-    )
+  picture.information-element
+    source(srcset="./assets/images/element/element-2.webp" type="image/webp")
+    img(src="./assets/images/element/element-2.png" alt="element-2")

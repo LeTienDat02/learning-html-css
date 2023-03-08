@@ -9,11 +9,11 @@
     );
   }
   &__content {
-    @include content($max-width, 0 120px 0 20px);
+    @include content(0 120px 0 20px);
   }
   &__img {
     position: relative;
-    padding-top: 40%;
+    padding-top: 60%;
     img {
       max-width: 100%;
       max-height: 100%;
